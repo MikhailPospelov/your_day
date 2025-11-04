@@ -359,3 +359,30 @@ document.addEventListener('DOMContentLoaded', function () {
   setSlideWidths();
   update();
 });
+
+//ПОКА ТУТ ПУСТО
+document.addEventListener('DOMContentLoaded', () => {
+    const modal   = document.getElementById('videoModal-2');
+    if (!modal) return;
+
+    const openButtons = document.querySelectorAll('.price-card__video');
+    const closeBtn    = modal.querySelector('.video-modal__close');
+    const backdrop    = modal.querySelector('.video-modal__backdrop');
+
+    const openModal = (e) => {
+      // чтобы страница не скроллилась к началу и не переходила по ссылке
+      if (e) e.preventDefault();
+      modal.classList.add('video-modal--active');
+    };
+
+    const closeModal = () => {
+      modal.classList.remove('video-modal--active');
+    };
+
+    openButtons.forEach(btn => {
+      btn.addEventListener('click', openModal);
+    });
+
+    if (closeBtn)  closeBtn.addEventListener('click', closeModal);
+    if (backdrop)  backdrop.addEventListener('click', closeModal);
+  });

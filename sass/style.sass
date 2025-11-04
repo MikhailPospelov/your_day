@@ -1014,7 +1014,7 @@ $text-color-light: #5EA751
     &__header
       display: flex
       flex-direction: row          // ← выстраиваем элементы по горизонтали
-      align-items: center          // ← выравниваем логотип и текст по центру по вертикали
+      align-items: flex-end !important         // ← выравниваем логотип и текст по центру по вертикали
       gap: 8px                    // ← расстояние между логотипом и текстом
       flex-wrap: nowrap 
 
@@ -1031,6 +1031,7 @@ $text-color-light: #5EA751
       color: #FF6088
       letter-spacing: 0
       display: block
+      top: 6px !important
 
   .nav-menu
     &__list
@@ -1066,7 +1067,7 @@ $text-color-light: #5EA751
     /* "ТВОЙ ДЕНЬ" */
     &__text
       position: static
-      font-size: 65px
+      font-size: 63px
       line-height: 1.2
       font-weight: 800
       color: $text-color-light
@@ -1102,6 +1103,7 @@ $text-color-light: #5EA751
       margin: 10px 0 0 0         // ← поднимаем кнопку ближе к фото
       box-shadow: 0 12px 24px rgba(0,0,0,.08)
       white-space: normal
+      text-transform: uppercase
 
   /* ХАК: чтобы капсула не оказалась обрезана */
   /* просто гарантируем, что .wrapper имеет достаточный нижний паддинг */
@@ -1199,7 +1201,7 @@ $text-color-light: #5EA751
       font-size: 16px
       line-height: 1.2
       padding: 10px 20px
-      border-width: 2px
+      
 
     &__content
       flex-direction: column
@@ -1227,6 +1229,7 @@ $text-color-light: #5EA751
     grid-template-columns: 1fr
     gap: 12px
     padding: 16px 0
+    border-width: 1px
 
     &__label
       font-size: 18px
@@ -1339,7 +1342,7 @@ $text-color-light: #5EA751
     background: $main-color-green
     border-radius: 20px 20px 80px 20px     // помягче угол снизу справа
     min-height: auto
-    padding: 24px 16px 20px 16px
+    padding: 30px 16px 40px 16px
     margin-top: 0
 
     &__container
@@ -1412,8 +1415,8 @@ $text-color-light: #5EA751
     /* убираем жесткую ширину 1291px */
     width: 100%
     min-height: auto
-    padding: 24px 16px 0px
-    padding-bottom: 0
+    padding: 24px 16px 40px
+    padding-bottom: 40px
     background: #ffff
     /* чтобы секция не растягивалась вбок */
     display: flex
@@ -1421,12 +1424,12 @@ $text-color-light: #5EA751
     align-items: center
     justify-content: flex-start
     box-sizing: border-box
+    margin-bottom: 20px
 
   /* внутренний контейнер */
   .price-section__container
     width: 100%
-    max-width: 360px 
-    height: 1500px       // вот ограничение карточки на мобилке
+    max-width: 388px        // ← увеличиваем ширину контейнера
     margin: 0 auto
     padding: 0
     display: flex
@@ -1449,13 +1452,14 @@ $text-color-light: #5EA751
   /* каждая карточка пакета */
   .price-card
     /* самое важное для выравнивания */
-    width: 391px       // карточка никогда не шире этого
+    width: 388px
+    max-width: 388px       // карточка никогда не шире этого
     margin: 0 auto 32px     // центрируем
     box-sizing: border-box
 
     /* внешний вид карточки */
     background: #fff
-    border: 2px solid rgba($text-color, .9)
+    border: 1px solid rgba($text-color, .9)
     border-radius: 20px 20px 20px 20px
     
     /* перестраиваем сетку -> столбик */
@@ -1464,7 +1468,7 @@ $text-color-light: #5EA751
     align-items: center
     text-align: center
     gap: 8px
-    padding: 20px 16px 0px
+    padding: 15px 16px 10px!important
     position: relative
 
     /* отключаем десктопную сетку */
@@ -1513,18 +1517,18 @@ $text-color-light: #5EA751
     &__photo
       order: 3
       width: 100%
-      max-width: 308px
+      max-width: 320px
       border-radius: 16px
       overflow: hidden
       margin: 0 auto 0
       height: auto           // не фиксируем высоту!
-      padding: 0px 0 10px 0
+      padding: 0px 0 5px 0
       img
         width: 100%
         max-height: 200px      // 🔽 уменьши высоту под нужный размер
         object-fit: cover 
         display: block
-        border-radius: 16px
+        border-radius: 16px 16px 80px 16px
 
     /* ===== ЧИПСЫ "аренда зала..." ===== */
     &__chips
@@ -1555,11 +1559,11 @@ $text-color-light: #5EA751
     &__list
       order: 4
       width: 100%
-      max-width: 290px
+      max-width: 300px
       margin: 0 auto 0
-      padding: 0 0 10px 20px
+      padding: 0 0 5px 5px
       font-size: 15px!important
-      line-height: 1.45
+      line-height: 1.2
       text-align: left
       color: $text-color
       li + li
@@ -1574,59 +1578,60 @@ $text-color-light: #5EA751
       margin: 0 auto
       display: flex
       flex-direction: column
-      gap: 16px
+      gap: 8px
       align-items: stretch
 
     &__price
       background: $main-color-green
-      border-radius: 20px
-      padding: 5px 9px -10px 9px
-      text-align: left
-      color: $text-color
-      font-size: 11px 
-      line-height: 1.4
+      border-radius: 10px 10px 40px 10px
+      padding: 10px 14px
+      min-height: 105px              // фиксируем высоту блока
       box-sizing: border-box
+      display: grid
+      grid-template-columns: 1fr auto
+      column-gap: 10px
+      align-items: flex-start
+      gap: 0px
+      margin-top: 10px
 
       .price-card__price-title
-        position: relative
-        display: none
-        align-items: center
-        justify-content: right
-        min-height: 36px
-        padding: 0px 8px 0px 8px
-        border-radius: 9999px
-        border: 2px solid rgba($text-color,.7)
-        background: transparent
-        color: $text-color
+        grid-column: 2 / 3               // правая колонка
+        grid-row: 1 / -1                 // тянется по высоте текста
+        align-self: flex-start
+        position: static !important      // убираем absolute
+        display: inline-flex !important  // на всякий случай перекрываем display:none
+        padding: 2px 16px                // уменьшаем вертикальные отступы
+        height: auto
+        line-height: 1
+        white-space: nowrap
         font-size: 14px
-        font-weight: 700
-        text-transform: uppercase
-        line-height: 1.2
-        margin-bottom: 12px
-        
+        border: 1px solid $text-color
 
       p
-        margin: 0 0 10px
-        font-size: 16px
+        grid-column: 1 / 2           // оба параграфа в левой колонке
+        margin: 0 0 4px
+        padding: 0px 10px 0px 10px
+        font-size: 14px
+        line-height: 1.4
         &:last-child
           margin-bottom: 0
 
     &__includes
-      border: 2px solid rgba($text-color,.6)
-      border-radius: 20px
-      padding: 16px
+      border: 1px solid rgba($text-color,.6)
+      border-radius: 10px
+      padding: 10px 10px 10px 8px
       text-align: left
       color: $text-color
-      font-size: 10px
-      line-height: 1.5
+      font-size: 8px
+      line-height: 1.2
 
       &-inner
         padding: 0
         margin: 0
-        font-size: 15px
+        font-size: 11px
         ul
           margin: 0
-          padding-left: 18px
+          padding-left: 5px
           li + li
             margin-top: 6px
 
@@ -1641,8 +1646,8 @@ $text-color-light: #5EA751
       color: $text-color
       border: none
       border-radius: 9999px
-      padding: 14px 16px
-      font-size: 16px
+      padding: 8px 0px
+      font-size: 14px
       font-weight: 600
       line-height: 1.3
       text-align: center
@@ -1668,26 +1673,32 @@ $text-color-light: #5EA751
 
     // стрелки как у тебя были
     &__btn
-      display: flex
+      display: inline-flex
+      align-items: center
+      justify-content: center
+
       position: absolute
-      top: 50%
+      top: 40px                // 👈 подними/опусти как нужно, сейчас около заголовка
       transform: translateY(-50%)
+
       width: 36px
       height: 36px
+      padding: 0                // 👈 чтобы круг не растягивался
       border-radius: 50%
+      box-sizing: border-box
+
       border: none
       background: rgba(203, 255, 181, 0.9)
       font-size: 20px
-      align-items: center
-      justify-content: center
+      line-height: 1
       cursor: pointer
       z-index: 5
 
     &__btn--prev
-      left: 8px
+      left: 20px
 
     &__btn--next
-      right: 8px
+      right: 20px
 
   // внутри мобильных стилей для .price-card добавь/убедиcь, что так:
   .price-card
@@ -1789,7 +1800,7 @@ $text-color-light: #5EA751
     margin: 0 !important
     padding: 10px 16px !important
     border-radius: 20px !important
-    border-width: 2px !important
+    border-width: 1px !important
     display: inline-grid !important
     gap: 6px !important
     white-space: nowrap !important
@@ -1800,6 +1811,7 @@ $text-color-light: #5EA751
       height: 32px !important
       padding: 0 12px !important
       border-radius: 9999px !important
+      border-width: 1px !important
       display: inline-flex !important
       align-items: center !important
       justify-content: center !important
@@ -1847,23 +1859,33 @@ $text-color-light: #5EA751
     display: none
 
   .carousel-btn
-    width: 36px !important
-    height: 36px !important
-    font-size: 20px !important
-    top: 50% !important
-    transform: translateY(-50%) !important
-    background-color: rgba(203,255,181,0.9) !important
+    display: none
+    position: absolute !important
+    top: 105px !important          // 👈 опустили вниз на половину высоты (44px / 2)
+    transform: none !important // половина высоты → между заголовком и фото
+    width: 44px !important                 // всегда идеальный круг
+    height: 44px !important
+    padding: 0 !important
+    box-sizing: border-box !important
     border-radius: 50% !important
     border: none !important
-    display: grid !important
-    place-items: center !important
-    z-index: 10 !important
+    background-color: rgba(203,255,181,0.9) !important
+
+    display: flex !important               // центрируем стрелку
+    align-items: center !important
+    justify-content: center !important
+    font-size: 22px !important
+    line-height: 1 !important 
+    z-index: 10
 
     &.prev
       left: 0 !important
 
     &.next
       right: 0 !important
+      width: 36px !important
+      height: 36px !important
+      display: flex
 
 //КАК НАС НАЙТИ
 @media (max-width: 768px)
@@ -1896,13 +1918,13 @@ $text-color-light: #5EA751
       flex-wrap: wrap !important
       column-gap: 16px !important
       row-gap: 24px !important
-      margin: 0 !important
+      margin: 0 auto !important 
       padding: 0 !important
-      max-width: 100% !important
+      max-width: 320px !important
 
   /* общая карточка с фото (МЕТРО, МЕЧЕТЬ, ДОМ, ПАРКОВКА, СТУДИЯ) */
   .findus-card
-    width: calc(50% - 8px) !important
+    width: 147px !important
     display: flex !important
     flex-direction: column !important
     align-items: flex-start !important
@@ -1970,13 +1992,13 @@ $text-color-light: #5EA751
       margin: 0 0 8px 0 !important
 
     &__btn
-      display: inline-flex !important
+      display: flex!important
       align-items: center !important
       justify-content: center !important
       height: 36px !important
       padding: 0 14px !important
       background: transparent !important  /* было зелёным — убираем заливку */
-      border: 2px solid $text-color-light !important
+      border: 1px solid $text-color-light !important
       border-radius: 999px !important
       color: $text-color !important
       cursor: pointer !important
@@ -2033,28 +2055,91 @@ $text-color-light: #5EA751
     &__left
       order: 1 !important
       display: flex !important
-      align-items: center !important
-      gap: 8px !important
+      align-items: flex-end      // оставляем нижнее выравнивание
+      gap: 14px
 
     &__logo
       width: 25px !important
       height: auto !important
 
+
     &__brand
       font-size: 10px !important
       line-height: 1.1 !important
       flex-direction: row
+      align-items: flex-end 
+      color: #FF6088
+      letter-spacing: .5px
+      position: relative         // 👈 добавили
+      top: 2px       
 
     &__right
       order: 2 !important
       display: flex !important
       align-items: center !important
       gap: 8px !important
+      margin-top: 4px
 
     &__icon
-      width: 25px !important
+      width: 18px !important
       height: auto !important
 
     &__mail
       font-size: 14px !important
       font-weight: 700 !important
+
+//ПОКА УТТ ПУСТО
+.video-modal-2
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.5)
+  backdrop-filter: blur(3px)
+  align-items: center
+  justify-content: center
+  z-index: 9999
+  &__body
+    width: 100%
+    padding: 20px 10px
+    text-align: center
+    font-size: 20px
+    font-weight: 600
+    color: $text-color
+
+  &.active
+    display: flex
+
+  &__content
+    background: #fff
+    padding: 24px 32px
+    border-radius: 16px
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15)
+    text-align: center
+    font-size: 18px
+    font-weight: 600
+    color: #333
+    animation: fadeIn .3s ease
+
+  &__close
+    margin-top: 16px
+    background: #b2f7a1
+    border: none
+    border-radius: 999px
+    padding: 8px 16px
+    font-size: 14px
+    font-weight: 600
+    cursor: pointer
+    transition: background .2s ease
+    &:hover
+      background: #a2ec90
+
+@keyframes fadeIn
+  from
+    opacity: 0
+    transform: scale(0.95)
+  to
+    opacity: 1
+    transform: scale(1)
