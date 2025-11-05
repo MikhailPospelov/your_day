@@ -294,6 +294,7 @@
   })();
 
 //КАРУСУЛЬ ПРАЙСОВ
+// price-carousel.js
 document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.querySelector('.price-carousel');
   if (!carousel) return;
@@ -303,62 +304,64 @@ document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = carousel.querySelector('.price-carousel__btn--prev');
   const nextBtn = carousel.querySelector('.price-carousel__btn--next');
 
+  if (!track || !slides.length || !prevBtn || !nextBtn) return;
+
+  const GAP = 12; // ⬅️ обязательно такой же, как gap в SASS (.price-carousel__track)
+
   let index = 0;
 
   const isMobile = () => window.matchMedia('(max-width: 768px)').matches;
 
-  // подгоняем ширину каждой карточки под ширину карусели
-  function setSlideWidths() {
+  function getSlideWidth() {
+    if (!slides.length) return 0;
+    const rect = slides[0].getBoundingClientRect();
+    return rect.width + GAP;
+  }
+
+  function updateButtons() {
     if (!isMobile()) {
-      slides.forEach(slide => {
-        slide.style.width = '';
-        slide.style.flex  = '';
-      });
-      track.style.transform = '';
+      prevBtn.disabled = false;
+      nextBtn.disabled = false;
       return;
     }
 
-    const width = carousel.getBoundingClientRect().width;
+    const slideWidth = getSlideWidth();
+    if (!slideWidth) return;
 
-    slides.forEach(slide => {
-      slide.style.width = width + 'px';
-      slide.style.flex  = '0 0 ' + width + 'px';
+    index = Math.round(track.scrollLeft / slideWidth);
+
+    prevBtn.disabled = index <= 0;
+    nextBtn.disabled = index >= slides.length - 1;
+  }
+
+  function scrollToIndex(i) {
+    if (!isMobile()) return;
+
+    const slideWidth = getSlideWidth();
+    if (!slideWidth) return;
+
+    index = Math.max(0, Math.min(i, slides.length - 1));
+
+    track.scrollTo({
+      left: slideWidth * index,
+      behavior: 'smooth'
     });
   }
 
-  function update() {
-    if (!isMobile()) {
-      index = 0;
-      track.style.transform = '';
-      return;
-    }
+  prevBtn.addEventListener('click', () => scrollToIndex(index - 1));
+  nextBtn.addEventListener('click', () => scrollToIndex(index + 1));
 
-    const width  = carousel.getBoundingClientRect().width;
-    const offset = -index * width;          // сдвиг ровно на ширину карусели
-
-    track.style.transform = `translateX(${offset}px)`;
-
-    prevBtn.disabled = index === 0;
-    nextBtn.disabled = index === slides.length - 1;
-  }
-
-  function goTo(i) {
-    if (!isMobile()) return;
-    index = Math.max(0, Math.min(i, slides.length - 1));
-    update();
-  }
-
-  prevBtn.addEventListener('click', () => goTo(index - 1));
-  nextBtn.addEventListener('click', () => goTo(index + 1));
-
-  window.addEventListener('resize', () => {
-    setSlideWidths();
-    update();
+  track.addEventListener('scroll', () => {
+    window.requestAnimationFrame(updateButtons);
   });
 
-  setSlideWidths();
-  update();
+  window.addEventListener('resize', updateButtons);
+
+  updateButtons();
 });
+
+
+
 
 //ПОКА ТУТ ПУСТО
 document.addEventListener('DOMContentLoaded', () => {

@@ -1054,25 +1054,29 @@ $text-color-light: #5EA751
 
   .main-section__content-container
     padding-bottom: 0px
+    margin-top: 24px 
 
   .wrapper
     /* Переводим в вертикальную композицию */
     position: relative
-    margin-top: 0
+    margin-top: 16px        // ⬅️ ещё немного воздуха
     display: flex
     flex-direction: column
     align-items: flex-start
     text-align: left
+    padding-bottom: 20px
 
     /* "ТВОЙ ДЕНЬ" */
     &__text
-      position: static
-      font-size: 63px
-      line-height: 1.2
+      position: absolute
+      left: 10px             // чтобы не прилипал к краю
+      top: 0px             // заголовок лежит на верхней части фото
+      margin: 0
       font-weight: 800
+      line-height: 1
       color: $text-color-light
-      margin: 40px 0 10px 0
-      z-index: 2
+      white-space: nowrap !important
+      font-size: clamp(10px, 11vw, 38px)
 
     /* картинка */
     &__img
@@ -1081,7 +1085,6 @@ $text-color-light: #5EA751
       height: auto
       display: block
       border-radius: 20px
-      /* делаем место снизу под зелёную плашку */
       margin: 0
       z-index: 1
 
@@ -1201,6 +1204,7 @@ $text-color-light: #5EA751
       font-size: 16px
       line-height: 1.2
       padding: 10px 20px
+      border-width: 1px
       
 
     &__content
@@ -1451,29 +1455,23 @@ $text-color-light: #5EA751
 
   /* каждая карточка пакета */
   .price-card
-    /* самое важное для выравнивания */
-    width: 388px
-    max-width: 388px       // карточка никогда не шире этого
-    margin: 0 auto 32px     // центрируем
-    box-sizing: border-box
+    flex: 0 0 100%          // одна карточка = ширина карусели
+    width: 100%
+    max-width: 100%         // убираем 388px, чтобы не вылезала за экран
+    margin: 0 0 32px        // без auto, чтобы не добавлять лишний сдвиг
 
-    /* внешний вид карточки */
+    box-sizing: border-box
     background: #fff
     border: 1px solid rgba($text-color, .9)
-    border-radius: 20px 20px 20px 20px
-    
-    /* перестраиваем сетку -> столбик */
+    border-radius: 20px
     display: flex
     flex-direction: column
     align-items: center
     text-align: center
     gap: 8px
-    padding: 15px 16px 10px!important
+    padding: 15px 16px 10px
     position: relative
-
-    /* отключаем десктопную сетку */
     grid-template-columns: unset
-    box-sizing: border-box
 
     &__left,
     &__right
@@ -1504,7 +1502,7 @@ $text-color-light: #5EA751
       width: 44px
       height: 44px
       border-radius: 9999px
-      border: 2px solid $text-color-light
+      border: 1px solid $text-color-light
       font-size: 16px
       font-weight: 700
       color: $text-color-light
@@ -1561,7 +1559,7 @@ $text-color-light: #5EA751
       width: 100%
       max-width: 300px
       margin: 0 auto 0
-      padding: 0 0 5px 5px
+      padding: 0 0 5px 9px
       font-size: 15px!important
       line-height: 1.2
       text-align: left
@@ -1630,17 +1628,18 @@ $text-color-light: #5EA751
         margin: 0
         font-size: 11px
         ul
-          margin: 0
+          margin: 0 0 0 5px
           padding-left: 5px
           li + li
             margin-top: 6px
+            
 
     /* ===== КНОПКА "смотреть видео" ===== */
     &__video
       order: 6
       position: static
       width: calc(100% - 32px)
-      max-width: 320px
+      max-width: 310px
       margin: 0 auto
       background: $main-color-green
       color: $text-color
@@ -1662,31 +1661,30 @@ $text-color-light: #5EA751
 @media (max-width: 768px)
   .price-carousel
     position: relative
-    overflow: hidden
-
+    width: 100%
     &__track
       display: flex
       flex-direction: row
-      gap: 0                 // ← убираем зазор между карточками
-      will-change: transform
-      transition: transform .35s ease
+      gap: 12px                    // тот же отступ, что и в JS (GAP = 12)
+      overflow-x: auto             // ✅ даём горизонтальный скролл
+      scroll-snap-type: x mandatory
+      -webkit-overflow-scrolling: touch
+      padding: 0 8px
+      box-sizing: border-box
 
     // стрелки как у тебя были
     &__btn
       display: inline-flex
       align-items: center
       justify-content: center
-
       position: absolute
-      top: 40px                // 👈 подними/опусти как нужно, сейчас около заголовка
+      top: 40px                    // уровень заголовка пакета, можно подправить
       transform: translateY(-50%)
-
       width: 36px
       height: 36px
-      padding: 0                // 👈 чтобы круг не растягивался
+      padding: 0
       border-radius: 50%
       box-sizing: border-box
-
       border: none
       background: rgba(203, 255, 181, 0.9)
       font-size: 20px
@@ -1702,17 +1700,18 @@ $text-color-light: #5EA751
 
   // внутри мобильных стилей для .price-card добавь/убедиcь, что так:
   .price-card
-    flex: 0 0 auto       // ширину зададим из JS
+    width: 100%
     max-width: 100%
-    margin: 0            // чтобы ничего не торчало сбоку
+    flex: 0 0 100%          // чтобы карусель знает, что слайд = 100% ширины
+    margin: 0 0 32px          // чтобы ничего не торчало сбоку
 
 
 /* ===== ДОП. УЖАТИЕ ЧУТЬ МЕЛЬЧЕ ДЛЯ ЭКРАНОВ ~375px ===== */
 @media (max-width: 430px)
   .price-section__container,
   .price-card
-    flex: 0 0 391px
-
+    flex: 0 0 100%
+    max-width: 100%
   .price-card
     padding: 20px 14px 24px
 
@@ -1863,8 +1862,8 @@ $text-color-light: #5EA751
     position: absolute !important
     top: 105px !important          // 👈 опустили вниз на половину высоты (44px / 2)
     transform: none !important // половина высоты → между заголовком и фото
-    width: 44px !important                 // всегда идеальный круг
-    height: 44px !important
+    width: 36px !important                 // всегда идеальный круг
+    height: 36px !important
     padding: 0 !important
     box-sizing: border-box !important
     border-radius: 50% !important
@@ -1892,7 +1891,7 @@ $text-color-light: #5EA751
   /* вся секция */
   .findus
     background: #ffff !important
-    padding: 40px 16px 20px !important
+    padding: 40px 32px 20px !important
     overflow: hidden !important
 
     &__title
@@ -1921,6 +1920,8 @@ $text-color-light: #5EA751
       margin: 0 auto !important 
       padding: 0 !important
       max-width: 320px !important
+      position: relative !important
+      left: 8px !important       
 
   /* общая карточка с фото (МЕТРО, МЕЧЕТЬ, ДОМ, ПАРКОВКА, СТУДИЯ) */
   .findus-card
