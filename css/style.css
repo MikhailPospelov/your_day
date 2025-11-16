@@ -6,7 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-/* line 11, ../your-day-project/src/sass/normalizez.scss */
+/* line 11, ../your-day-project/your_day/sass/normalizez.scss */
 html {
   line-height: 1.15;
   /* 1 */
@@ -19,7 +19,7 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-/* line 23, ../your-day-project/src/sass/normalizez.scss */
+/* line 23, ../your-day-project/your_day/sass/normalizez.scss */
 body {
   margin: 0;
 }
@@ -27,7 +27,7 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-/* line 31, ../your-day-project/src/sass/normalizez.scss */
+/* line 31, ../your-day-project/your_day/sass/normalizez.scss */
 main {
   display: block;
 }
@@ -36,7 +36,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 40, ../your-day-project/src/sass/normalizez.scss */
+/* line 40, ../your-day-project/your_day/sass/normalizez.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -48,7 +48,7 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 53, ../your-day-project/src/sass/normalizez.scss */
+/* line 53, ../your-day-project/your_day/sass/normalizez.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -62,7 +62,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 64, ../your-day-project/src/sass/normalizez.scss */
+/* line 64, ../your-day-project/your_day/sass/normalizez.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -75,7 +75,7 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-/* line 76, ../your-day-project/src/sass/normalizez.scss */
+/* line 76, ../your-day-project/your_day/sass/normalizez.scss */
 a {
   background-color: transparent;
 }
@@ -84,7 +84,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 85, ../your-day-project/src/sass/normalizez.scss */
+/* line 85, ../your-day-project/your_day/sass/normalizez.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -97,7 +97,7 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 95, ../your-day-project/src/sass/normalizez.scss */
+/* line 95, ../your-day-project/your_day/sass/normalizez.scss */
 b,
 strong {
   font-weight: bolder;
@@ -107,7 +107,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 105, ../your-day-project/src/sass/normalizez.scss */
+/* line 105, ../your-day-project/your_day/sass/normalizez.scss */
 code,
 kbd,
 samp {
@@ -120,7 +120,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 116, ../your-day-project/src/sass/normalizez.scss */
+/* line 116, ../your-day-project/your_day/sass/normalizez.scss */
 small {
   font-size: 80%;
 }
@@ -129,7 +129,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 125, ../your-day-project/src/sass/normalizez.scss */
+/* line 125, ../your-day-project/your_day/sass/normalizez.scss */
 sub,
 sup {
   font-size: 75%;
@@ -138,12 +138,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 133, ../your-day-project/src/sass/normalizez.scss */
+/* line 133, ../your-day-project/your_day/sass/normalizez.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 137, ../your-day-project/src/sass/normalizez.scss */
+/* line 137, ../your-day-project/your_day/sass/normalizez.scss */
 sup {
   top: -0.5em;
 }
@@ -153,7 +153,7 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
-/* line 148, ../your-day-project/src/sass/normalizez.scss */
+/* line 148, ../your-day-project/your_day/sass/normalizez.scss */
 img {
   border-style: none;
 }
@@ -164,7 +164,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 160, ../your-day-project/src/sass/normalizez.scss */
+/* line 160, ../your-day-project/your_day/sass/normalizez.scss */
 button,
 input,
 optgroup,
@@ -184,7 +184,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 176, ../your-day-project/src/sass/normalizez.scss */
+/* line 176, ../your-day-project/your_day/sass/normalizez.scss */
 button,
 input {
   /* 1 */
@@ -195,7 +195,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 186, ../your-day-project/src/sass/normalizez.scss */
+/* line 186, ../your-day-project/your_day/sass/normalizez.scss */
 button,
 select {
   /* 1 */
@@ -205,7 +205,7 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 195, ../your-day-project/src/sass/normalizez.scss */
+/* line 195, ../your-day-project/your_day/sass/normalizez.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -216,7 +216,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 206, ../your-day-project/src/sass/normalizez.scss */
+/* line 206, ../your-day-project/your_day/sass/normalizez.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -228,7 +228,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 218, ../your-day-project/src/sass/normalizez.scss */
+/* line 218, ../your-day-project/your_day/sass/normalizez.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -239,7 +239,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
-/* line 229, ../your-day-project/src/sass/normalizez.scss */
+/* line 229, ../your-day-project/your_day/sass/normalizez.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -250,7 +250,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 240, ../your-day-project/src/sass/normalizez.scss */
+/* line 240, ../your-day-project/your_day/sass/normalizez.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -269,7 +269,7 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 253, ../your-day-project/src/sass/normalizez.scss */
+/* line 253, ../your-day-project/your_day/sass/normalizez.scss */
 progress {
   vertical-align: baseline;
 }
@@ -277,7 +277,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-/* line 261, ../your-day-project/src/sass/normalizez.scss */
+/* line 261, ../your-day-project/your_day/sass/normalizez.scss */
 textarea {
   overflow: auto;
 }
@@ -286,7 +286,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-/* line 270, ../your-day-project/src/sass/normalizez.scss */
+/* line 270, ../your-day-project/your_day/sass/normalizez.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -298,7 +298,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 280, ../your-day-project/src/sass/normalizez.scss */
+/* line 280, ../your-day-project/your_day/sass/normalizez.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -308,7 +308,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 290, ../your-day-project/src/sass/normalizez.scss */
+/* line 290, ../your-day-project/your_day/sass/normalizez.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -319,7 +319,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-/* line 299, ../your-day-project/src/sass/normalizez.scss */
+/* line 299, ../your-day-project/your_day/sass/normalizez.scss */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -328,7 +328,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 308, ../your-day-project/src/sass/normalizez.scss */
+/* line 308, ../your-day-project/your_day/sass/normalizez.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -341,7 +341,7 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-/* line 320, ../your-day-project/src/sass/normalizez.scss */
+/* line 320, ../your-day-project/your_day/sass/normalizez.scss */
 details {
   display: block;
 }
@@ -349,7 +349,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-/* line 328, ../your-day-project/src/sass/normalizez.scss */
+/* line 328, ../your-day-project/your_day/sass/normalizez.scss */
 summary {
   display: list-item;
 }
@@ -359,7 +359,7 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
-/* line 339, ../your-day-project/src/sass/normalizez.scss */
+/* line 339, ../your-day-project/your_day/sass/normalizez.scss */
 template {
   display: none;
 }
@@ -367,13 +367,13 @@ template {
 /**
  * Add the correct display in IE 10.
  */
-/* line 347, ../your-day-project/src/sass/normalizez.scss */
+/* line 347, ../your-day-project/your_day/sass/normalizez.scss */
 [hidden] {
   display: none;
 }
 
 /* line 1, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 2, ../your-day-project/src/sass/resets.scss */
+/* line 2, ../your-day-project/your_day/sass/resets.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -396,38 +396,38 @@ time, mark, audio, video {
 }
 
 /* line 21, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 24, ../your-day-project/src/sass/resets.scss */
+/* line 24, ../your-day-project/your_day/sass/resets.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 /* line 25, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 30, ../your-day-project/src/sass/resets.scss */
+/* line 30, ../your-day-project/your_day/sass/resets.scss */
 html {
   height: 100%;
 }
 
 /* line 28, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 35, ../your-day-project/src/sass/resets.scss */
+/* line 35, ../your-day-project/your_day/sass/resets.scss */
 body {
   line-height: 1;
 }
 
 /* line 31, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 40, ../your-day-project/src/sass/resets.scss */
+/* line 40, ../your-day-project/your_day/sass/resets.scss */
 ol, ul {
   list-style: none;
 }
 
 /* line 34, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 45, ../your-day-project/src/sass/resets.scss */
+/* line 45, ../your-day-project/your_day/sass/resets.scss */
 blockquote, q {
   quotes: none;
 }
 
 /* line 37, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 50, ../your-day-project/src/sass/resets.scss */
+/* line 50, ../your-day-project/your_day/sass/resets.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -435,32 +435,32 @@ q:before, q:after {
 }
 
 /* line 42, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 57, ../your-day-project/src/sass/resets.scss */
+/* line 57, ../your-day-project/your_day/sass/resets.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /*# sourceMappingURL=resets.css.map */
-/* line 10, ../your-day-project/src/sass/style.sass */
+/* line 12, ../your-day-project/your_day/sass/style.sass */
 body {
   background-color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
 }
 
-/* line 14, ../your-day-project/src/sass/style.sass */
+/* line 16, ../your-day-project/your_day/sass/style.sass */
 .container {
   max-width: 1294px;
   margin: 0 auto;
 }
 
-/* line 18, ../your-day-project/src/sass/style.sass */
+/* line 20, ../your-day-project/your_day/sass/style.sass */
 .main-section {
   min-height: 800px;
   padding-top: 13px;
 }
 
-/* line 21, ../your-day-project/src/sass/style.sass */
+/* line 23, ../your-day-project/your_day/sass/style.sass */
 .main-section__header {
   display: flex;
   flex-direction: row;
@@ -469,7 +469,7 @@ body {
   gap: 13px;
 }
 
-/* line 27, ../your-day-project/src/sass/style.sass */
+/* line 29, ../your-day-project/your_day/sass/style.sass */
 .main-section__nav-container {
   display: flex;
   flex-direction: row;
@@ -478,7 +478,7 @@ body {
   margin-bottom: 70px;
 }
 
-/* line 33, ../your-day-project/src/sass/style.sass */
+/* line 35, ../your-day-project/your_day/sass/style.sass */
 .main-section__text {
   font-weight: 700;
   font-family: "Nunito Sans", sans-serif;
@@ -489,43 +489,43 @@ body {
   justify-content: space-between;
 }
 
-/* line 42, ../your-day-project/src/sass/style.sass */
+/* line 44, ../your-day-project/your_day/sass/style.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
 }
 
-/* line 45, ../your-day-project/src/sass/style.sass */
+/* line 47, ../your-day-project/your_day/sass/style.sass */
 .nav-menu__list-item {
   font-weight: 700;
   font-size: 24px;
   padding-top: 25px;
 }
 
-/* line 49, ../your-day-project/src/sass/style.sass */
+/* line 51, ../your-day-project/your_day/sass/style.sass */
 .nav-menu__list-item:last-child {
   margin-right: 0px;
 }
 
-/* line 51, ../your-day-project/src/sass/style.sass */
+/* line 53, ../your-day-project/your_day/sass/style.sass */
 .nav-menu__list-item a {
   text-decoration: none;
   color: #5EA751;
 }
 
-/* line 55, ../your-day-project/src/sass/style.sass */
+/* line 57, ../your-day-project/your_day/sass/style.sass */
 .content-container {
   display: flex;
   justify-content: center;
 }
 
-/* line 58, ../your-day-project/src/sass/style.sass */
+/* line 60, ../your-day-project/your_day/sass/style.sass */
 .wrapper {
   position: relative;
   margin-top: 20px;
 }
 
-/* line 61, ../your-day-project/src/sass/style.sass */
+/* line 63, ../your-day-project/your_day/sass/style.sass */
 .wrapper__text {
   font-weight: 800;
   position: absolute;
@@ -535,7 +535,7 @@ body {
   z-index: 10;
 }
 
-/* line 68, ../your-day-project/src/sass/style.sass */
+/* line 70, ../your-day-project/your_day/sass/style.sass */
 .wrapper__btn {
   font-size: 48px;
   left: 27px;
@@ -549,18 +549,18 @@ body {
   z-index: 20;
 }
 
-/* line 79, ../your-day-project/src/sass/style.sass */
+/* line 81, ../your-day-project/your_day/sass/style.sass */
 .wrapper__img {
   margin-bottom: 60px;
 }
 
-/* line 81, ../your-day-project/src/sass/style.sass */
+/* line 83, ../your-day-project/your_day/sass/style.sass */
 .slogan-section {
   background: #ffffff;
   padding: 0px 0 70px;
 }
 
-/* line 85, ../your-day-project/src/sass/style.sass */
+/* line 87, ../your-day-project/your_day/sass/style.sass */
 .slogan {
   display: flex;
   justify-content: center;
@@ -568,11 +568,11 @@ body {
   text-align: center;
 }
 
-/* line 90, ../your-day-project/src/sass/style.sass */
+/* line 92, ../your-day-project/your_day/sass/style.sass */
 .slogan__text {
   max-width: 1160px;
   margin: 0 auto;
-  color: #334D38;
+  color: #236a49;
   text-transform: uppercase;
   letter-spacing: .4px;
   font-size: 36px;
@@ -580,42 +580,42 @@ body {
   line-height: 189%;
 }
 
-/* line 99, ../your-day-project/src/sass/style.sass */
+/* line 101, ../your-day-project/your_day/sass/style.sass */
 .slogan__highlight {
   color: #5EA751;
 }
 
-/* line 101, ../your-day-project/src/sass/style.sass */
+/* line 103, ../your-day-project/your_day/sass/style.sass */
 .slogan__highlight-green {
   color: #5EA751;
 }
 
-/* line 103, ../your-day-project/src/sass/style.sass */
+/* line 105, ../your-day-project/your_day/sass/style.sass */
 .slogan__emoji {
   display: inline-block;
   vertical-align: middle;
   margin: 0 14px;
 }
 
-/* line 108, ../your-day-project/src/sass/style.sass */
+/* line 110, ../your-day-project/your_day/sass/style.sass */
 .slogan__emoji--castle {
   width: 69px;
   height: 59px;
 }
 
-/* line 112, ../your-day-project/src/sass/style.sass */
+/* line 114, ../your-day-project/your_day/sass/style.sass */
 .slogan__emoji--smile-left {
   width: 104px;
   height: 59px;
 }
 
-/* line 116, ../your-day-project/src/sass/style.sass */
+/* line 118, ../your-day-project/your_day/sass/style.sass */
 .slogan__emoji--smile-right {
   width: 133px;
   height: 59px;
 }
 
-/* line 133, ../your-day-project/src/sass/style.sass */
+/* line 135, ../your-day-project/your_day/sass/style.sass */
 .rules-section {
   background: #B6FF98;
   border-top-left-radius: 20px;
@@ -628,7 +628,7 @@ body {
   overflow: hidden;
 }
 
-/* line 144, ../your-day-project/src/sass/style.sass */
+/* line 146, ../your-day-project/your_day/sass/style.sass */
 .rules-section__container {
   max-width: 1294px;
   margin: 0 auto;
@@ -636,7 +636,7 @@ body {
   position: relative;
 }
 
-/* line 150, ../your-day-project/src/sass/style.sass */
+/* line 152, ../your-day-project/your_day/sass/style.sass */
 .rules-section__header {
   display: flex;
   justify-content: space-between;
@@ -644,7 +644,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* line 156, ../your-day-project/src/sass/style.sass */
+/* line 158, ../your-day-project/your_day/sass/style.sass */
 .rules-section__title {
   margin: 0;
   font-weight: 700;
@@ -652,22 +652,22 @@ body {
   color: #5EA751;
 }
 
-/* line 162, ../your-day-project/src/sass/style.sass */
+/* line 164, ../your-day-project/your_day/sass/style.sass */
 .rules-section__note {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 32px;
   font-weight: 500;
-  color: #334D38;
-  border: 2px solid rgba(51, 77, 56, 0.6);
+  color: #236a49;
+  border: 2px solid rgba(35, 106, 73, 0.6);
   border-radius: 9999px;
   padding: 12px 52px;
   background: transparent;
   line-height: 1;
 }
 
-/* line 175, ../your-day-project/src/sass/style.sass */
+/* line 177, ../your-day-project/your_day/sass/style.sass */
 .rules-section__content {
   display: flex;
   justify-content: space-between;
@@ -676,12 +676,12 @@ body {
   gap: 60px;
 }
 
-/* line 183, ../your-day-project/src/sass/style.sass */
+/* line 185, ../your-day-project/your_day/sass/style.sass */
 .rules-section__illustration {
   margin-top: 40px;
 }
 
-/* line 186, ../your-day-project/src/sass/style.sass */
+/* line 188, ../your-day-project/your_day/sass/style.sass */
 .rules-section__image {
   flex-shrink: 0;
   width: 500px;
@@ -691,7 +691,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* line 194, ../your-day-project/src/sass/style.sass */
+/* line 196, ../your-day-project/your_day/sass/style.sass */
 .rules-section__image img {
   width: 100%;
   height: 100%;
@@ -699,7 +699,7 @@ body {
   display: block;
 }
 
-/* line 200, ../your-day-project/src/sass/style.sass */
+/* line 202, ../your-day-project/your_day/sass/style.sass */
 .rules-section__list {
   width: 710px;
   margin-right: 0;
@@ -708,17 +708,17 @@ body {
   justify-content: center;
 }
 
-/* line 207, ../your-day-project/src/sass/style.sass */
+/* line 209, ../your-day-project/your_day/sass/style.sass */
 .rules-item {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 24px;
   padding: 18px 0;
-  border-bottom: 2px solid rgba(51, 77, 56, 0.55);
+  border-bottom: 2px solid rgba(35, 106, 73, 0.55);
   align-items: center;
 }
 
-/* line 215, ../your-day-project/src/sass/style.sass */
+/* line 217, ../your-day-project/your_day/sass/style.sass */
 .rules-item__label {
   color: #5EA751;
   font-weight: 700;
@@ -731,21 +731,21 @@ body {
   align-items: center;
 }
 
-/* line 226, ../your-day-project/src/sass/style.sass */
+/* line 228, ../your-day-project/your_day/sass/style.sass */
 .rules-item__text {
-  color: #334D38;
+  color: #236a49;
   line-height: 1.55;
   font-size: 25px;
   align-self: center;
 }
 
-/* line 253, ../your-day-project/src/sass/style.sass */
+/* line 255, ../your-day-project/your_day/sass/style.sass */
 .four-section {
   padding: 60px 0 120px;
   margin-top: 70px;
 }
 
-/* line 256, ../your-day-project/src/sass/style.sass */
+/* line 258, ../your-day-project/your_day/sass/style.sass */
 .four-section__header {
   display: flex;
   justify-content: space-between;
@@ -754,17 +754,17 @@ body {
   gap: 20px;
 }
 
-/* line 262, ../your-day-project/src/sass/style.sass */
+/* line 264, ../your-day-project/your_day/sass/style.sass */
 .four-section__title {
   font-weight: 700;
   font-size: 64px;
   color: #5EA751;
 }
 
-/* line 266, ../your-day-project/src/sass/style.sass */
+/* line 268, ../your-day-project/your_day/sass/style.sass */
 .four-section__btn {
   font-size: 24px;
-  color: #334D38;
+  color: #236a49;
   border: none;
   border-radius: 100px;
   padding: 12px 28px 10px 28px;
@@ -772,7 +772,7 @@ body {
   background-color: #B6FF98;
 }
 
-/* line 274, ../your-day-project/src/sass/style.sass */
+/* line 276, ../your-day-project/your_day/sass/style.sass */
 .block {
   display: flex;
   align-items: center;
@@ -781,7 +781,7 @@ body {
   margin-bottom: 0;
 }
 
-/* line 280, ../your-day-project/src/sass/style.sass */
+/* line 282, ../your-day-project/your_day/sass/style.sass */
 .block__img {
   width: 600px;
   height: 494px;
@@ -790,7 +790,7 @@ body {
   display: block;
 }
 
-/* line 286, ../your-day-project/src/sass/style.sass */
+/* line 288, ../your-day-project/your_day/sass/style.sass */
 .block__text-section {
   display: flex;
   flex-direction: column;
@@ -799,7 +799,7 @@ body {
   transform: translateY(-20px);
 }
 
-/* line 292, ../your-day-project/src/sass/style.sass */
+/* line 294, ../your-day-project/your_day/sass/style.sass */
 .block__text {
   font-size: 85px;
   font-weight: 700;
@@ -807,20 +807,20 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 297, ../your-day-project/src/sass/style.sass */
+/* line 299, ../your-day-project/your_day/sass/style.sass */
 .block__text-2 {
   font-size: 30px;
   line-height: 1.5;
-  color: #334D38;
+  color: #236a49;
 }
 
-/* line 301, ../your-day-project/src/sass/style.sass */
+/* line 303, ../your-day-project/your_day/sass/style.sass */
 .block--reverse {
   display: flex;
   flex-direction: row-reverse;
 }
 
-/* line 327, ../your-day-project/src/sass/style.sass */
+/* line 329, ../your-day-project/your_day/sass/style.sass */
 .admin-section {
   background: #B6FF98;
   border-top-left-radius: 20px;
@@ -830,14 +830,14 @@ body {
   min-height: 800px;
 }
 
-/* line 335, ../your-day-project/src/sass/style.sass */
+/* line 337, ../your-day-project/your_day/sass/style.sass */
 .admin-section__container {
   background: #B6FF98;
   border-radius: 20px 20px 180px 20px;
   padding: 65px;
 }
 
-/* line 340, ../your-day-project/src/sass/style.sass */
+/* line 342, ../your-day-project/your_day/sass/style.sass */
 .admin-section__title {
   font-weight: 700;
   padding: 0 0 60px 0;
@@ -846,7 +846,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 347, ../your-day-project/src/sass/style.sass */
+/* line 349, ../your-day-project/your_day/sass/style.sass */
 .admin-section__card {
   display: grid;
   grid-template-columns: 477.14px 1fr;
@@ -854,7 +854,7 @@ body {
   align-items: start;
 }
 
-/* line 353, ../your-day-project/src/sass/style.sass */
+/* line 355, ../your-day-project/your_day/sass/style.sass */
 .admin-section__photo {
   width: 470px;
   margin-top: 40px;
@@ -863,7 +863,7 @@ body {
   overflow: hidden;
 }
 
-/* line 359, ../your-day-project/src/sass/style.sass */
+/* line 361, ../your-day-project/your_day/sass/style.sass */
 .admin-section__photo img {
   width: 100%;
   height: 100%;
@@ -871,18 +871,18 @@ body {
   display: block;
 }
 
-/* line 365, ../your-day-project/src/sass/style.sass */
+/* line 367, ../your-day-project/your_day/sass/style.sass */
 .admin-section__text {
   margin-top: 40px;
   transform: translateY(130px);
   max-width: 650px;
   font-size: 30px;
   line-height: 1.6;
-  color: #334D38;
+  color: #236a49;
   margin-left: 62px;
 }
 
-/* line 376, ../your-day-project/src/sass/style.sass */
+/* line 378, ../your-day-project/your_day/sass/style.sass */
 .price-section {
   width: 1291px;
   min-height: 596px;
@@ -893,12 +893,12 @@ body {
   margin: 0 auto;
 }
 
-/* line 384, ../your-day-project/src/sass/style.sass */
+/* line 386, ../your-day-project/your_day/sass/style.sass */
 .price-section__container {
   padding: 0 12px;
 }
 
-/* line 386, ../your-day-project/src/sass/style.sass */
+/* line 388, ../your-day-project/your_day/sass/style.sass */
 .price-section__title {
   font-weight: 700;
   font-size: 64px;
@@ -907,11 +907,11 @@ body {
   margin: 50px 0 85px;
 }
 
-/* line 392, ../your-day-project/src/sass/style.sass */
+/* line 394, ../your-day-project/your_day/sass/style.sass */
 .price-card {
   margin: 0 auto 32px;
   position: relative;
-  border: 2px solid rgba(51, 77, 56, 0.9);
+  border: 2px solid rgba(35, 106, 73, 0.9);
   border-radius: 28px;
   background: #ffffff;
   padding: 42px;
@@ -920,27 +920,27 @@ body {
   gap: 28px;
 }
 
-/* line 402, ../your-day-project/src/sass/style.sass */
+/* line 404, ../your-day-project/your_day/sass/style.sass */
 .price-card____right {
   margin-bottom: 40px;
 }
 
-/* line 404, ../your-day-project/src/sass/style.sass */
+/* line 406, ../your-day-project/your_day/sass/style.sass */
 .price-card__list {
   margin: 40px 0 16px;
   padding-left: 22px;
-  color: #334D38;
+  color: #236a49;
   font-size: 24px;
   line-height: 130%;
   list-style: decimal;
 }
 
-/* line 411, ../your-day-project/src/sass/style.sass */
+/* line 413, ../your-day-project/your_day/sass/style.sass */
 .price-card__list li + li {
   margin-top: 8px;
 }
 
-/* line 413, ../your-day-project/src/sass/style.sass */
+/* line 415, ../your-day-project/your_day/sass/style.sass */
 .price-card__header {
   display: flex;
   align-items: center;
@@ -948,32 +948,32 @@ body {
   margin-bottom: 24px;
 }
 
-/* line 418, ../your-day-project/src/sass/style.sass */
+/* line 420, ../your-day-project/your_day/sass/style.sass */
 .price-card__name {
   font-size: 32px;
-  color: #334D38;
+  color: #236a49;
   text-transform: uppercase;
   margin: 0 10px 0 0;
   line-height: 100%;
   font-weight: 800;
 }
 
-/* line 425, ../your-day-project/src/sass/style.sass */
+/* line 427, ../your-day-project/your_day/sass/style.sass */
 .price-card__age {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: 2px solid #334D38;
+  border: 2px solid #236a49;
   border-radius: 50px;
   font-size: 20px;
   font-weight: 700;
-  color: #334D38;
+  color: #236a49;
   text-align: center;
 }
 
-/* line 437, ../your-day-project/src/sass/style.sass */
+/* line 439, ../your-day-project/your_day/sass/style.sass */
 .price-card__photo {
   margin-top: 40px;
   width: 409px;
@@ -983,7 +983,7 @@ body {
   margin: 0;
 }
 
-/* line 444, ../your-day-project/src/sass/style.sass */
+/* line 446, ../your-day-project/your_day/sass/style.sass */
 .price-card__photo img {
   width: 100%;
   height: 100%;
@@ -991,14 +991,14 @@ body {
   display: block;
 }
 
-/* line 449, ../your-day-project/src/sass/style.sass */
+/* line 451, ../your-day-project/your_day/sass/style.sass */
 .price-card__chips {
   display: flex;
   gap: 17px;
   margin: 0px 0px 14px 0px;
 }
 
-/* line 454, ../your-day-project/src/sass/style.sass */
+/* line 456, ../your-day-project/your_day/sass/style.sass */
 .price-card__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1006,7 +1006,7 @@ body {
   align-items: start;
 }
 
-/* line 459, ../your-day-project/src/sass/style.sass */
+/* line 461, ../your-day-project/your_day/sass/style.sass */
 .price-card__price {
   background: #B6FF98;
   border-radius: 30px;
@@ -1017,16 +1017,16 @@ body {
   gap: 19px;
 }
 
-/* line 467, ../your-day-project/src/sass/style.sass */
+/* line 469, ../your-day-project/your_day/sass/style.sass */
 .price-card__price p {
   font-size: 20px;
   line-height: 130%;
-  color: #334D38;
+  color: #236a49;
   padding: 10px 0px 0px 10px;
   width: 100%;
 }
 
-/* line 473, ../your-day-project/src/sass/style.sass */
+/* line 475, ../your-day-project/your_day/sass/style.sass */
 .price-card__price-title {
   display: inline-flex;
   align-items: center;
@@ -1035,16 +1035,16 @@ body {
   padding: 0 20px;
   font-size: 24px;
   line-height: 100%;
-  color: #334D38;
+  color: #236a49;
   text-transform: uppercase;
-  border: 2px solid rgba(51, 77, 56, 0.7);
+  border: 2px solid rgba(35, 106, 73, 0.7);
   border-radius: 9999px;
   margin-bottom: 5px;
 }
 
-/* line 486, ../your-day-project/src/sass/style.sass */
+/* line 488, ../your-day-project/your_day/sass/style.sass */
 .price-card__includes {
-  border: 2px solid rgba(51, 77, 56, 0.6);
+  border: 2px solid rgba(35, 106, 73, 0.6);
   border-radius: 30px;
   padding: 10px 8px 15px 15px;
   display: flex;
@@ -1053,28 +1053,29 @@ body {
   text-align: left;
 }
 
-/* line 494, ../your-day-project/src/sass/style.sass */
+/* line 496, ../your-day-project/your_day/sass/style.sass */
 .price-card__includes-inner {
-  color: #334D38;
+  color: #236a49;
   font-size: 18px;
   line-height: 1.5;
   text-decoration: none;
 }
 
-/* line 499, ../your-day-project/src/sass/style.sass */
+/* line 501, ../your-day-project/your_day/sass/style.sass */
 .price-card__includes-inner ul {
   width: 100%;
   margin: 6px 16px;
   padding: 0;
+  list-style-type: disc !important;
 }
 
-/* line 504, ../your-day-project/src/sass/style.sass */
+/* line 507, ../your-day-project/your_day/sass/style.sass */
 .price-card__video {
   position: absolute;
   right: 26px;
   bottom: 20px;
   background: #B6FF98;
-  color: #334D38;
+  color: #236a49;
   border: none;
   border-radius: 9999px;
   padding: 12px 31px;
@@ -1087,36 +1088,36 @@ body {
   cursor: pointer;
 }
 
-/* line 521, ../your-day-project/src/sass/style.sass */
+/* line 524, ../your-day-project/your_day/sass/style.sass */
 .price-card__arrow {
   font-size: 18px;
 }
 
-/* line 523, ../your-day-project/src/sass/style.sass */
+/* line 526, ../your-day-project/your_day/sass/style.sass */
 .price-carousel {
   position: relative;
   width: 100%;
 }
 
-/* line 527, ../your-day-project/src/sass/style.sass */
+/* line 530, ../your-day-project/your_day/sass/style.sass */
 .price-carousel__track {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-/* line 532, ../your-day-project/src/sass/style.sass */
+/* line 535, ../your-day-project/your_day/sass/style.sass */
 .price-carousel__btn {
   display: none;
 }
 
-/* line 534, ../your-day-project/src/sass/style.sass */
+/* line 537, ../your-day-project/your_day/sass/style.sass */
 .chip {
   display: flex;
   justify-content: center;
   align-items: cenetr;
   background: #B6FF98;
-  color: #334D38;
+  color: #236a49;
   font-size: 24px;
   border-radius: 9999px;
   padding: 12px 28px;
@@ -1126,7 +1127,7 @@ body {
 }
 
 /* ===== СЕКЦИЯ "ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ" ===== */
-/* line 553, ../your-day-project/src/sass/style.sass */
+/* line 556, ../your-day-project/your_day/sass/style.sass */
 .extras-section {
   background: #B6FF98;
   border-radius: 20px 180px 20px 20px;
@@ -1134,14 +1135,14 @@ body {
   margin-top: 40px;
 }
 
-/* line 559, ../your-day-project/src/sass/style.sass */
+/* line 562, ../your-day-project/your_day/sass/style.sass */
 .extras-section__container {
   max-width: 1294px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* line 564, ../your-day-project/src/sass/style.sass */
+/* line 567, ../your-day-project/your_day/sass/style.sass */
 .extras-section__title {
   font-weight: 700;
   font-size: 64px;
@@ -1152,7 +1153,7 @@ body {
 }
 
 /* ===== СТРОКА С ТРЕМЯ КОЛОНКАМИ ===== */
-/* line 573, ../your-day-project/src/sass/style.sass */
+/* line 576, ../your-day-project/your_day/sass/style.sass */
 .extras {
   display: grid;
   grid-template-columns: 260px 1fr 220px;
@@ -1160,19 +1161,19 @@ body {
   gap: 28px;
 }
 
-/* line 578, ../your-day-project/src/sass/style.sass */
+/* line 581, ../your-day-project/your_day/sass/style.sass */
 .extras:not(:last-child) {
   margin-bottom: 44px;
 }
 
-/* line 581, ../your-day-project/src/sass/style.sass */
+/* line 584, ../your-day-project/your_day/sass/style.sass */
 .extras__left {
   grid-column: 1;
   display: grid;
   gap: 16px;
 }
 
-/* line 586, ../your-day-project/src/sass/style.sass */
+/* line 589, ../your-day-project/your_day/sass/style.sass */
 .extras__subtitle {
   font-size: 28px;
   font-weight: 700;
@@ -1183,28 +1184,28 @@ body {
 }
 
 /* ===== ПРАЙС (СПРАВА) ===== */
-/* line 595, ../your-day-project/src/sass/style.sass */
+/* line 598, ../your-day-project/your_day/sass/style.sass */
 .extras-price {
   grid-column: 3;
   align-self: start;
   display: inline-grid;
   gap: 8px;
   padding: 14px 18px;
-  border: 5px solid rgba(51, 77, 56, 0.6);
+  border: 5px solid rgba(35, 106, 73, 0.6);
   border-radius: 22px;
   background: transparent;
-  color: #334D38;
+  color: #236a49;
   max-width: 220px;
 }
 
-/* line 607, ../your-day-project/src/sass/style.sass */
+/* line 610, ../your-day-project/your_day/sass/style.sass */
 .extras-price__badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 30px;
   padding: 0 10px;
-  border: 2px solid rgba(51, 77, 56, 0.7);
+  border: 2px solid rgba(35, 106, 73, 0.7);
   border-radius: 9999px;
   text-transform: uppercase;
   font-weight: 700;
@@ -1213,7 +1214,7 @@ body {
   margin-bottom: 6px;
 }
 
-/* line 621, ../your-day-project/src/sass/style.sass */
+/* line 624, ../your-day-project/your_day/sass/style.sass */
 .extras-price__text {
   margin: 0;
   font-size: 16px;
@@ -1221,7 +1222,7 @@ body {
 }
 
 /* ===== КАРУСЕЛЬ (ЦЕНТР) ===== */
-/* line 632, ../your-day-project/src/sass/style.sass */
+/* line 635, ../your-day-project/your_day/sass/style.sass */
 .extras__carousel,
 .extras-carousel {
   grid-column: 2;
@@ -1230,7 +1231,7 @@ body {
   flex: 1;
 }
 
-/* line 639, ../your-day-project/src/sass/style.sass */
+/* line 642, ../your-day-project/your_day/sass/style.sass */
 .carousel-track,
 .extras-carousel__track {
   display: flex;
@@ -1239,7 +1240,7 @@ body {
   transition: transform .4s ease;
 }
 
-/* line 646, ../your-day-project/src/sass/style.sass */
+/* line 649, ../your-day-project/your_day/sass/style.sass */
 .carousel-track > img,
 .extras-carousel__track > img,
 .extras-carousel__slide {
@@ -1253,7 +1254,7 @@ body {
   object-fit: cover;
 }
 
-/* line 658, ../your-day-project/src/sass/style.sass */
+/* line 661, ../your-day-project/your_day/sass/style.sass */
 .carousel-btn,
 .extras-carousel__btn {
   position: absolute;
@@ -1264,7 +1265,7 @@ body {
   border-radius: 50%;
   border: none;
   background-color: rgba(203, 255, 181, 0.9);
-  color: #334D38;
+  color: #236a49;
   font-size: 24px;
   line-height: 1;
   display: grid;
@@ -1274,35 +1275,35 @@ body {
   z-index: 10;
 }
 
-/* line 676, ../your-day-project/src/sass/style.sass */
+/* line 679, ../your-day-project/your_day/sass/style.sass */
 .carousel-btn:hover,
 .extras-carousel__btn:hover {
   background: #80ff4c;
   color: white;
 }
 
-/* line 680, ../your-day-project/src/sass/style.sass */
+/* line 683, ../your-day-project/your_day/sass/style.sass */
 .carousel-btn.prev,
 .extras-carousel__btn--prev {
   left: 4px;
   padding: 0px 0px 0px 0px;
 }
 
-/* line 685, ../your-day-project/src/sass/style.sass */
+/* line 688, ../your-day-project/your_day/sass/style.sass */
 .carousel-btn.next,
 .extras-carousel__btn--next {
   right: 10px;
 }
 
 /* === Extras: слева текст+цена, справа карусель === */
-/* line 691, ../your-day-project/src/sass/style.sass */
+/* line 694, ../your-day-project/your_day/sass/style.sass */
 .extras-section {
   /* левая колонка: заголовок + цена (идут вертикально) */
   /* блок цены — остаётся внутри левой колонки ПОД заголовком */
   /* === УВЕЛИЧЕННЫЕ карточки цены в "Дополнительные услуги" === */
 }
 
-/* line 692, ../your-day-project/src/sass/style.sass */
+/* line 695, ../your-day-project/your_day/sass/style.sass */
 .extras-section .extras {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -1310,12 +1311,12 @@ body {
   align-items: start;
 }
 
-/* line 697, ../your-day-project/src/sass/style.sass */
+/* line 700, ../your-day-project/your_day/sass/style.sass */
 .extras-section .extras:not(:last-child) {
   margin-bottom: 44px;
 }
 
-/* line 701, ../your-day-project/src/sass/style.sass */
+/* line 704, ../your-day-project/your_day/sass/style.sass */
 .extras-section .extras__left {
   grid-column: 1 !important;
   display: flex;
@@ -1324,7 +1325,7 @@ body {
   gap: 14px;
 }
 
-/* line 708, ../your-day-project/src/sass/style.sass */
+/* line 711, ../your-day-project/your_day/sass/style.sass */
 .extras-section .extras__subtitle {
   margin: 0;
   color: #5EA751;
@@ -1333,7 +1334,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 717, ../your-day-project/src/sass/style.sass */
+/* line 720, ../your-day-project/your_day/sass/style.sass */
 .extras-price {
   /* общий бокс */
   max-width: 280px !important;
@@ -1345,7 +1346,7 @@ body {
   /* текст под бейджем — крупнее и читаемее */
 }
 
-/* line 726, ../your-day-project/src/sass/style.sass */
+/* line 729, ../your-day-project/your_day/sass/style.sass */
 .extras-price__badge {
   height: 40px !important;
   padding: 0 16px !important;
@@ -1356,17 +1357,17 @@ body {
   border-radius: 9999px;
 }
 
-/* line 736, ../your-day-project/src/sass/style.sass */
+/* line 739, ../your-day-project/your_day/sass/style.sass */
 .extras-price__text {
   margin: 0;
   font-size: 25px !important;
   line-height: 1.45;
-  color: #334D38;
+  color: #236a49;
 }
 
 /* мобильная подстройка, чтобы не выглядело громоздко * */
 /* правая колонка: карусель */
-/* line 746, ../your-day-project/src/sass/style.sass */
+/* line 749, ../your-day-project/your_day/sass/style.sass */
 .extras__carousel {
   grid-column: 2 !important;
   position: relative;
@@ -1374,7 +1375,7 @@ body {
 }
 
 /* адаптив: на мобиле — одна колонка, сначала заголовок+цена, потом карусель */
-/* line 757, ../your-day-project/src/sass/style.sass */
+/* line 760, ../your-day-project/your_day/sass/style.sass */
 .findus {
   background: #ffff;
   padding: 56px 0 80px;
@@ -1384,12 +1385,12 @@ body {
   /* ✅ Увеличенные отступы между фото */
 }
 
-/* line 763, ../your-day-project/src/sass/style.sass */
+/* line 766, ../your-day-project/your_day/sass/style.sass */
 .findus__container {
   position: relative;
 }
 
-/* line 766, ../your-day-project/src/sass/style.sass */
+/* line 769, ../your-day-project/your_day/sass/style.sass */
 .findus__title {
   font-size: 64px;
   font-weight: 700;
@@ -1397,13 +1398,13 @@ body {
   margin: 60px 0 80px 0;
 }
 
-/* line 772, ../your-day-project/src/sass/style.sass */
+/* line 775, ../your-day-project/your_day/sass/style.sass */
 .findus__stage {
   position: relative;
   padding: 12px 0;
 }
 
-/* line 777, ../your-day-project/src/sass/style.sass */
+/* line 780, ../your-day-project/your_day/sass/style.sass */
 .findus__path {
   position: absolute;
   top: -90px;
@@ -1414,7 +1415,7 @@ body {
   z-index: 0;
 }
 
-/* line 787, ../your-day-project/src/sass/style.sass */
+/* line 790, ../your-day-project/your_day/sass/style.sass */
 .findus__grid {
   --cell: 270px;
   --gap-x: 100px;
@@ -1430,13 +1431,13 @@ body {
   ransform: translateX(100px);
 }
 
-/* line 801, ../your-day-project/src/sass/style.sass */
+/* line 804, ../your-day-project/your_day/sass/style.sass */
 .findus-card {
   position: relative;
   width: 270px;
 }
 
-/* line 805, ../your-day-project/src/sass/style.sass */
+/* line 808, ../your-day-project/your_day/sass/style.sass */
 .findus-card img {
   width: 270px;
   height: 270px;
@@ -1446,7 +1447,7 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* line 813, ../your-day-project/src/sass/style.sass */
+/* line 816, ../your-day-project/your_day/sass/style.sass */
 .findus-card__idx {
   display: none;
   position: absolute;
@@ -1457,7 +1458,7 @@ body {
   font-size: 18px;
 }
 
-/* line 822, ../your-day-project/src/sass/style.sass */
+/* line 825, ../your-day-project/your_day/sass/style.sass */
 .findus-card__caption {
   margin-top: 20px;
   font-size: 25px;
@@ -1466,7 +1467,7 @@ body {
   letter-spacing: .5px;
 }
 
-/* line 829, ../your-day-project/src/sass/style.sass */
+/* line 832, ../your-day-project/your_day/sass/style.sass */
 .findus-cta {
   width: 270px;
   height: 270px;
@@ -1479,7 +1480,7 @@ body {
   padding: 16px;
 }
 
-/* line 840, ../your-day-project/src/sass/style.sass */
+/* line 843, ../your-day-project/your_day/sass/style.sass */
 .findus-cta__title {
   font-size: 35px;
   font-weight: 800;
@@ -1488,7 +1489,7 @@ body {
   margin-left: 50px;
 }
 
-/* line 846, ../your-day-project/src/sass/style.sass */
+/* line 849, ../your-day-project/your_day/sass/style.sass */
 .findus-cta__addr {
   font-size: 25px;
   font-weight: 600;
@@ -1497,7 +1498,7 @@ body {
   line-height: 1.3;
 }
 
-/* line 853, ../your-day-project/src/sass/style.sass */
+/* line 856, ../your-day-project/your_day/sass/style.sass */
 .findus-cta__btn {
   display: inline-flex;
   align-items: center;
@@ -1511,12 +1512,12 @@ body {
   transition: transform .15s ease, border-color .15s ease;
 }
 
-/* line 864, ../your-day-project/src/sass/style.sass */
+/* line 867, ../your-day-project/your_day/sass/style.sass */
 .findus-cta__btn:active {
   transform: translateY(1px);
 }
 
-/* line 866, ../your-day-project/src/sass/style.sass */
+/* line 869, ../your-day-project/your_day/sass/style.sass */
 .findus-cta__arrow {
   stroke: #5EA751;
   stroke-width: 1.2px;
@@ -1529,13 +1530,13 @@ body {
   transform-origin: center;
 }
 
-/* line 883, ../your-day-project/src/sass/style.sass */
+/* line 886, ../your-day-project/your_day/sass/style.sass */
 .footer {
   background: #ffff;
   padding: 20px 0;
 }
 
-/* line 887, ../your-day-project/src/sass/style.sass */
+/* line 890, ../your-day-project/your_day/sass/style.sass */
 .footer__container {
   max-width: 1294px;
   margin: 0 auto;
@@ -1545,21 +1546,21 @@ body {
   justify-content: space-between;
 }
 
-/* line 895, ../your-day-project/src/sass/style.sass */
+/* line 898, ../your-day-project/your_day/sass/style.sass */
 .footer__left {
   display: flex;
   align-items: flex-end;
   gap: 14px;
 }
 
-/* line 900, ../your-day-project/src/sass/style.sass */
+/* line 903, ../your-day-project/your_day/sass/style.sass */
 .footer__logo {
   width: 73px;
   height: auto;
   display: block;
 }
 
-/* line 905, ../your-day-project/src/sass/style.sass */
+/* line 908, ../your-day-project/your_day/sass/style.sass */
 .footer__brand {
   font-size: 24px;
   font-weight: 800;
@@ -1567,19 +1568,19 @@ body {
   letter-spacing: .5px;
 }
 
-/* line 911, ../your-day-project/src/sass/style.sass */
+/* line 914, ../your-day-project/your_day/sass/style.sass */
 .footer__right {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* line 916, ../your-day-project/src/sass/style.sass */
+/* line 919, ../your-day-project/your_day/sass/style.sass */
 .footer__icon-link {
   display: inline-block;
 }
 
-/* line 919, ../your-day-project/src/sass/style.sass */
+/* line 922, ../your-day-project/your_day/sass/style.sass */
 .footer__icon {
   width: 40px;
   height: 22px;
@@ -1587,7 +1588,7 @@ body {
   cursor: pointer;
 }
 
-/* line 925, ../your-day-project/src/sass/style.sass */
+/* line 928, ../your-day-project/your_day/sass/style.sass */
 .footer__mail {
   font-size: 25px;
   font-weight: 700;
@@ -1596,12 +1597,102 @@ body {
   transition: color .2s ease;
 }
 
-/* line 931, ../your-day-project/src/sass/style.sass */
+/* line 934, ../your-day-project/your_day/sass/style.sass */
 .footer__mail:hover {
   color: #4b8540;
 }
 
-/* line 934, ../your-day-project/src/sass/style.sass */
+/* line 936, ../your-day-project/your_day/sass/style.sass */
+.findus-map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+/* line 943, ../your-day-project/your_day/sass/style.sass */
+.findus-map__inner {
+  width: 100%;
+  max-width: 420px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* line 949, ../your-day-project/your_day/sass/style.sass */
+.findus-map__frame {
+  width: 100%;
+  height: 260px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* line 956, ../your-day-project/your_day/sass/style.sass */
+.reviews-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+/* line 963, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__inner {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* line 973, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* line 988, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* line 992, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--gis {
+  background-color: #00B341;
+}
+
+/* line 994, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--gis:hover {
+  background-color: #008a32;
+}
+
+/* line 997, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--yandex {
+  background-color: #FC3F1D;
+}
+
+/* line 999, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--yandex:hover {
+  background-color: #ed2703;
+}
+
+/* line 1003, ../your-day-project/your_day/sass/style.sass */
 .video-modal {
   position: fixed;
   inset: 0;
@@ -1611,19 +1702,19 @@ body {
   z-index: 10000;
 }
 
-/* line 942, ../your-day-project/src/sass/style.sass */
+/* line 1011, ../your-day-project/your_day/sass/style.sass */
 .video-modal--active {
   display: flex;
 }
 
-/* line 945, ../your-day-project/src/sass/style.sass */
+/* line 1014, ../your-day-project/your_day/sass/style.sass */
 .video-modal__backdrop {
   position: absolute;
   inset: 0;
   background: white;
 }
 
-/* line 950, ../your-day-project/src/sass/style.sass */
+/* line 1019, ../your-day-project/your_day/sass/style.sass */
 .video-modal__dialog {
   position: relative;
   z-index: 1;
@@ -1639,7 +1730,7 @@ body {
   align-items: flex-end;
 }
 
-/* line 964, ../your-day-project/src/sass/style.sass */
+/* line 1033, ../your-day-project/your_day/sass/style.sass */
 .video-modal__close {
   background: transparent;
   border: none;
@@ -1653,12 +1744,12 @@ body {
   border-radius: 8px;
 }
 
-/* line 975, ../your-day-project/src/sass/style.sass */
+/* line 1044, ../your-day-project/your_day/sass/style.sass */
 .video-modal__close:hover {
   background: white;
 }
 
-/* line 978, ../your-day-project/src/sass/style.sass */
+/* line 1047, ../your-day-project/your_day/sass/style.sass */
 .video-modal__player {
   width: 100%;
   max-height: 70vh;
@@ -1669,19 +1760,19 @@ body {
 
 @media (max-width: 768px) {
   /* контейнеры влезают в экран и не липнут к краю */
-  /* line 991, ../your-day-project/src/sass/style.sass */
+  /* line 1060, ../your-day-project/your_day/sass/style.sass */
   .container {
     max-width: 100%;
     padding: 0 16px;
     box-sizing: border-box;
   }
   /* ===== ШАПКА / НАВИГАЦИЯ ===== */
-  /* line 998, ../your-day-project/src/sass/style.sass */
+  /* line 1067, ../your-day-project/your_day/sass/style.sass */
   .main-section {
     padding-top: 16px;
     min-height: auto;
   }
-  /* line 1002, ../your-day-project/src/sass/style.sass */
+  /* line 1071, ../your-day-project/your_day/sass/style.sass */
   .main-section__nav-container {
     /* одна строка: слева бренд, справа телефон */
     width: 100%;
@@ -1694,7 +1785,7 @@ body {
     margin-bottom: 0px;
     height: auto;
   }
-  /* line 1014, ../your-day-project/src/sass/style.sass */
+  /* line 1083, ../your-day-project/your_day/sass/style.sass */
   .main-section__header {
     display: flex;
     flex-direction: row;
@@ -1703,13 +1794,13 @@ body {
     flex-wrap: nowrap;
     /* логотип сильно уменьшаем */
   }
-  /* line 1022, ../your-day-project/src/sass/style.sass */
+  /* line 1091, ../your-day-project/your_day/sass/style.sass */
   .main-section__header img {
     width: 22px;
     height: auto;
     display: block;
   }
-  /* line 1027, ../your-day-project/src/sass/style.sass */
+  /* line 1096, ../your-day-project/your_day/sass/style.sass */
   .main-section__text {
     font-size: 12px;
     line-height: 1.2;
@@ -1719,29 +1810,49 @@ body {
     display: block;
     top: 6px !important;
   }
-  /* line 1037, ../your-day-project/src/sass/style.sass */
+  /* line 1106, ../your-day-project/your_day/sass/style.sass */
   .nav-menu__list {
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0;
   }
-  /* line 1042, ../your-day-project/src/sass/style.sass */
+  /* line 1111, ../your-day-project/your_day/sass/style.sass */
   .nav-menu__list-item {
     padding-top: 0;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.2;
   }
-  /* line 1047, ../your-day-project/src/sass/style.sass */
+  /* line 1116, ../your-day-project/your_day/sass/style.sass */
   .nav-menu__list-item a {
     font-size: 12px;
     color: #5EA751;
     text-decoration: none;
     font-weight: 700;
   }
+  /* line 1121, ../your-day-project/your_day/sass/style.sass */
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5EA751;
+    color: #ffffff !important;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1.2;
+    border: none;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+  /* line 1134, ../your-day-project/your_day/sass/style.sass */
+  .whatsapp-btn:hover {
+    background-color: #25D366;
+    transform: translateY(-1px);
+  }
   /* ===== HERO: ЗАГОЛОВОК + ФОТО + ЗЕЛЁНАЯ ПИЛЮЛЯ ===== */
-  /* line 1055, ../your-day-project/src/sass/style.sass */
+  /* line 1140, ../your-day-project/your_day/sass/style.sass */
   .main-section__content-container {
     padding-bottom: 0px;
     margin-top: 24px;
@@ -1749,7 +1860,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 1063, ../your-day-project/src/sass/style.sass */
+  /* line 1148, ../your-day-project/your_day/sass/style.sass */
   .wrapper {
     margin-top: 0;
     margin-bottom: 0;
@@ -1760,13 +1871,13 @@ body {
     text-align: left;
     /* контейнер над картинкой – именно к нему привязываем текст */
   }
-  /* line 1073, ../your-day-project/src/sass/style.sass */
+  /* line 1158, ../your-day-project/your_day/sass/style.sass */
   .wrapper__img-box {
     position: relative;
     width: 100%;
     display: inline-block;
   }
-  /* line 1078, ../your-day-project/src/sass/style.sass */
+  /* line 1163, ../your-day-project/your_day/sass/style.sass */
   .wrapper__img {
     width: 100%;
     height: auto;
@@ -1774,7 +1885,7 @@ body {
     border-radius: 20px;
     margin-bottom: 0;
   }
-  /* line 1085, ../your-day-project/src/sass/style.sass */
+  /* line 1170, ../your-day-project/your_day/sass/style.sass */
   .wrapper__text {
     position: absolute;
     left: 1%;
@@ -1787,13 +1898,13 @@ body {
     font-size: clamp(14px, 9vw, 40px);
     z-index: 2;
   }
-  /* line 1097, ../your-day-project/src/sass/style.sass */
+  /* line 1182, ../your-day-project/your_day/sass/style.sass */
   .wrapper__btn {
     position: static;
     z-index: 5;
     order: 3;
+    color: #5EA751;
     background-color: #B6FF98;
-    color: #334D38;
     border: none;
     border-radius: 100px;
     font-size: 16px;
@@ -1809,13 +1920,13 @@ body {
     text-transform: uppercase;
   }
   /* ===== СЕКЦИЯ С ТЕКСТОМ (slogan-section) ===== */
-  /* line 1119, ../your-day-project/src/sass/style.sass */
+  /* line 1204, ../your-day-project/your_day/sass/style.sass */
   .slogan-section {
     background: transparent;
     margin-top: 16px;
     padding-bottom: 32px;
   }
-  /* line 1123, ../your-day-project/src/sass/style.sass */
+  /* line 1208, ../your-day-project/your_day/sass/style.sass */
   .slogan {
     width: 100%;
     max-width: 100%;
@@ -1825,7 +1936,7 @@ body {
     text-align: center;
     padding: 0 0;
   }
-  /* line 1132, ../your-day-project/src/sass/style.sass */
+  /* line 1217, ../your-day-project/your_day/sass/style.sass */
   .slogan__text {
     /* превращаем в "карточку" с белым фоном */
     background: #ffffff;
@@ -1846,52 +1957,54 @@ body {
          но у тебя <br> уже в html, так что просто уменьшаем межстрочный,
          чтобы абзац выглядел не рваными криками, а текстом */
   }
-  /* line 1152, ../your-day-project/src/sass/style.sass */
+  /* line 1237, ../your-day-project/your_day/sass/style.sass */
   .slogan__text br {
     display: none;
   }
-  /* line 1155, ../your-day-project/src/sass/style.sass */
+  /* line 1240, ../your-day-project/your_day/sass/style.sass */
   .slogan__highlight {
     color: #5EA751;
     font-weight: 600;
   }
-  /* line 1159, ../your-day-project/src/sass/style.sass */
+  /* line 1244, ../your-day-project/your_day/sass/style.sass */
   .slogan__highlight-green {
     color: #5EA751;
     font-weight: 600;
   }
-  /* line 1163, ../your-day-project/src/sass/style.sass */
+  /* line 1248, ../your-day-project/your_day/sass/style.sass */
   .slogan__emoji {
+    display: none;
     display: inline-block;
     vertical-align: middle;
     margin: 0 6px;
     width: 34px;
     height: 32px;
   }
-  /* line 1170, ../your-day-project/src/sass/style.sass */
+  /* line 1256, ../your-day-project/your_day/sass/style.sass */
   .slogan__emoji--castle {
     width: 30px;
     height: auto;
   }
-  /* line 1173, ../your-day-project/src/sass/style.sass */
+  /* line 1259, ../your-day-project/your_day/sass/style.sass */
   .slogan__emoji--smile-left {
     width: 50px;
     height: auto;
   }
-  /* line 1176, ../your-day-project/src/sass/style.sass */
+  /* line 1262, ../your-day-project/your_day/sass/style.sass */
   .slogan__emoji--smile-right {
     width: 50px;
     height: auto;
   }
   /* ===== ПРАВИЛА (начало следующего блока, чтобы не разваливалось сразу после слогана) ===== */
-  /* line 1183, ../your-day-project/src/sass/style.sass */
+  /* line 1269, ../your-day-project/your_day/sass/style.sass */
   .rules-section {
     border-radius: 20px;
     border-top-right-radius: 80px;
     padding: 40px 16px;
     min-height: auto;
+    background: #B6FF98;
   }
-  /* line 1189, ../your-day-project/src/sass/style.sass */
+  /* line 1276, ../your-day-project/your_day/sass/style.sass */
   .rules-section__header {
     flex-direction: column;
     align-items: center;
@@ -1900,27 +2013,27 @@ body {
     gap: 16px;
     margin-bottom: 24px;
   }
-  /* line 1197, ../your-day-project/src/sass/style.sass */
+  /* line 1284, ../your-day-project/your_day/sass/style.sass */
   .rules-section__title {
     font-size: 28px;
     font-weight: 800;
     line-height: 1.2;
-    color: #5EA751;
+    color: #ffff;
   }
-  /* line 1203, ../your-day-project/src/sass/style.sass */
+  /* line 1290, ../your-day-project/your_day/sass/style.sass */
   .rules-section__note {
     font-size: 16px;
     line-height: 1.2;
     padding: 10px 20px;
     border-width: 1px;
   }
-  /* line 1210, ../your-day-project/src/sass/style.sass */
+  /* line 1297, ../your-day-project/your_day/sass/style.sass */
   .rules-section__content {
     flex-direction: column;
     gap: 0px;
     margin-top: 24px;
   }
-  /* line 1215, ../your-day-project/src/sass/style.sass */
+  /* line 1302, ../your-day-project/your_day/sass/style.sass */
   .rules-section__illustration {
     width: 100%;
     max-width: 320px;
@@ -1930,26 +2043,26 @@ body {
     margin: 0 auto 24px auto;
     display: block;
   }
-  /* line 1223, ../your-day-project/src/sass/style.sass */
+  /* line 1310, ../your-day-project/your_day/sass/style.sass */
   .rules-section__illustration img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-  /* line 1228, ../your-day-project/src/sass/style.sass */
+  /* line 1315, ../your-day-project/your_day/sass/style.sass */
   .rules-section__list {
     width: 100%;
     margin-right: 0;
   }
-  /* line 1232, ../your-day-project/src/sass/style.sass */
+  /* line 1319, ../your-day-project/your_day/sass/style.sass */
   .rules-item {
     grid-template-columns: 1fr;
     gap: 12px;
     padding: 16px 0;
     border-width: 1px;
   }
-  /* line 1238, ../your-day-project/src/sass/style.sass */
+  /* line 1325, ../your-day-project/your_day/sass/style.sass */
   .rules-item__label {
     font-size: 18px;
     line-height: 1.3;
@@ -1958,19 +2071,19 @@ body {
     text-transform: uppercase;
     letter-spacing: .4px;
   }
-  /* line 1246, ../your-day-project/src/sass/style.sass */
+  /* line 1333, ../your-day-project/your_day/sass/style.sass */
   .rules-item__text {
     font-size: 16px;
     line-height: 1.45;
     color: #334D38;
     font-weight: 500;
   }
-  /* line 1253, ../your-day-project/src/sass/style.sass */
+  /* line 1340, ../your-day-project/your_day/sass/style.sass */
   .four-section {
     padding: 40px 16px 0px;
     margin-top: 20px;
   }
-  /* line 1257, ../your-day-project/src/sass/style.sass */
+  /* line 1344, ../your-day-project/your_day/sass/style.sass */
   .four-section__header {
     width: 100%;
     flex-direction: column;
@@ -1979,7 +2092,7 @@ body {
     gap: 16px;
     margin-bottom: 32px;
   }
-  /* line 1266, ../your-day-project/src/sass/style.sass */
+  /* line 1353, ../your-day-project/your_day/sass/style.sass */
   .four-section__title {
     font-size: 28px;
     line-height: 1.2;
@@ -1988,7 +2101,7 @@ body {
     text-align: left;
     margin: 0;
   }
-  /* line 1274, ../your-day-project/src/sass/style.sass */
+  /* line 1361, ../your-day-project/your_day/sass/style.sass */
   .four-section__btn {
     font-size: 14px;
     line-height: 1.3;
@@ -2003,7 +2116,7 @@ body {
     max-width: 240px;
     width: auto;
   }
-  /* line 1289, ../your-day-project/src/sass/style.sass */
+  /* line 1376, ../your-day-project/your_day/sass/style.sass */
   .four-section__block,
   .block {
     width: 100%;
@@ -2014,7 +2127,7 @@ body {
     gap: 16px;
     margin-bottom: 40px;
   }
-  /* line 1299, ../your-day-project/src/sass/style.sass */
+  /* line 1386, ../your-day-project/your_day/sass/style.sass */
   .block__img {
     width: 100%;
     max-width: 280px;
@@ -2024,7 +2137,7 @@ body {
     display: block;
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
   }
-  /* line 1308, ../your-day-project/src/sass/style.sass */
+  /* line 1395, ../your-day-project/your_day/sass/style.sass */
   .block__text-section {
     max-width: 320px;
     transform: none;
@@ -2035,15 +2148,15 @@ body {
     text-align: center;
     margin: 0 auto;
   }
-  /* line 1318, ../your-day-project/src/sass/style.sass */
+  /* line 1405, ../your-day-project/your_day/sass/style.sass */
   .block__text {
     font-size: 45px;
     line-height: 1.2;
     font-weight: 700;
-    color: #B6FF98;
+    color: #5EA751;
     margin: 8px 0 12px 0;
   }
-  /* line 1325, ../your-day-project/src/sass/style.sass */
+  /* line 1412, ../your-day-project/your_day/sass/style.sass */
   .block__text-2 {
     font-size: 15px;
     line-height: 1.5;
@@ -2052,18 +2165,18 @@ body {
     margin: 0;
     max-width: 320px;
   }
-  /* line 1338, ../your-day-project/src/sass/style.sass */
+  /* line 1425, ../your-day-project/your_day/sass/style.sass */
   .four-section__block .block__img {
     order: 1;
   }
-  /* line 1340, ../your-day-project/src/sass/style.sass */
+  /* line 1427, ../your-day-project/your_day/sass/style.sass */
   .four-section__block .block__text-section {
     order: 2;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 1345, ../your-day-project/src/sass/style.sass */
+  /* line 1432, ../your-day-project/your_day/sass/style.sass */
   .admin-section {
     background: #B6FF98;
     border-radius: 20px 20px 80px 20px;
@@ -2071,7 +2184,7 @@ body {
     padding: 30px 16px 40px 16px;
     margin-top: 0;
   }
-  /* line 1352, ../your-day-project/src/sass/style.sass */
+  /* line 1439, ../your-day-project/your_day/sass/style.sass */
   .admin-section__container {
     background: transparent;
     border-radius: 0;
@@ -2082,7 +2195,7 @@ body {
     max-width: 340px;
     margin: 0 auto;
   }
-  /* line 1364, ../your-day-project/src/sass/style.sass */
+  /* line 1451, ../your-day-project/your_day/sass/style.sass */
   .admin-section__title {
     font-size: 28px;
     line-height: 1.3;
@@ -2095,7 +2208,7 @@ body {
     max-width: none;
     padding-bottom: 0px;
   }
-  /* line 1377, ../your-day-project/src/sass/style.sass */
+  /* line 1464, ../your-day-project/your_day/sass/style.sass */
   .admin-section__card {
     background: #ffffff;
     border-radius: 16px 16px 60px 16px;
@@ -2105,30 +2218,31 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 25px;
   }
-  /* line 1389, ../your-day-project/src/sass/style.sass */
+  /* line 1477, ../your-day-project/your_day/sass/style.sass */
   .admin-section__photo {
     width: 100%;
     max-width: 260px;
     margin: 0 auto -10px auto;
     aspect-ratio: auto;
-    border-radius: 16px;
+    border-radius: 16px 16px 60px 16px;
     overflow: hidden;
   }
-  /* line 1396, ../your-day-project/src/sass/style.sass */
+  /* line 1484, ../your-day-project/your_day/sass/style.sass */
   .admin-section__photo img {
     width: 100%;
-    height: auto;
+    height: 260px;
     object-fit: cover;
     display: block;
-    border-radius: 16px;
+    border-radius: 16px 16px 30px 16px;
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
   }
-  /* line 1404, ../your-day-project/src/sass/style.sass */
+  /* line 1492, ../your-day-project/your_day/sass/style.sass */
   .admin-section__text {
     transform: none;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.45;
     font-weight: 500;
     color: #334D38;
@@ -2140,15 +2254,83 @@ body {
 /* ===== МОБИЛЬНЫЙ ПРАЙС-ПАКЕТ (все экраны до 768px) ===== */
 @media (max-width: 768px) {
   /* сама секция */
-  /* line 1418, ../your-day-project/src/sass/style.sass */
+  /* line 1506, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel {
+    position: relative;
+  }
+  /* line 1508, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: -4px;
+    margin-bottom: 16px;
+  }
+  /* line 1515, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background: rgba(94, 167, 81, 0.3);
+  }
+  /* line 1523, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__dot--active {
+    background: #5EA751;
+  }
+  /* line 1525, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__track {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    gap: 0px;
+  }
+  /* line 1536, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    background: #B6FF98;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 5;
+  }
+  /* line 1555, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__btn:hover {
+    background: #B6FF98;
+    color: #fff;
+  }
+  /* line 1559, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__btn--prev {
+    display: none !important;
+    left: 20px;
+  }
+  /* line 1563, ../your-day-project/your_day/sass/style.sass */
+  .price-carousel__btn--next {
+    display: none;
+    right: 20px;
+  }
+  /* line 1566, ../your-day-project/your_day/sass/style.sass */
   .price-section {
-    /* убираем жесткую ширину 1291px */
     width: 100%;
     min-height: auto;
     padding: 24px 16px 40px;
     padding-bottom: 40px;
-    background: #ffff;
-    /* чтобы секция не растягивалась вбок */
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2157,7 +2339,7 @@ body {
     margin-bottom: 20px;
   }
   /* внутренний контейнер */
-  /* line 1434, ../your-day-project/src/sass/style.sass */
+  /* line 1580, ../your-day-project/your_day/sass/style.sass */
   .price-section__container {
     width: 100%;
     max-width: 388px;
@@ -2169,7 +2351,7 @@ body {
     box-sizing: border-box;
   }
   /* заголовок "ПРАЙС-ПАКЕТЫ" */
-  /* line 1445, ../your-day-project/src/sass/style.sass */
+  /* line 1591, ../your-day-project/your_day/sass/style.sass */
   .price-section__title {
     width: 100%;
     max-width: 360px;
@@ -2182,28 +2364,17 @@ body {
     text-align: center;
   }
   /* каждая карточка пакета */
-  /* line 1457, ../your-day-project/src/sass/style.sass */
+  /* line 1603, ../your-day-project/your_day/sass/style.sass */
   .price-card {
-    /* самое важное для выравнивания */
-    width: 388px;
-    max-width: 388px;
-    margin: 0 auto 32px;
-    box-sizing: border-box;
-    /* внешний вид карточки */
-    background: #fff;
-    border: 1px solid rgba(51, 77, 56, 0.9);
-    border-radius: 20px 20px 20px 20px;
-    /* перестраиваем сетку -> столбик */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-    padding: 15px 16px 10px !important;
-    position: relative;
-    /* отключаем десктопную сетку */
+    width: 100%;
+    max-width: 100%;
     grid-template-columns: unset;
     box-sizing: border-box;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    gap: 0px;
+    margin: 0;
     /* ===== ШАПКА (название + возраст) ===== */
     /* ===== ФОТО ПАКЕТА ===== */
     /* ===== ЧИПСЫ "аренда зала..." ===== */
@@ -2211,11 +2382,11 @@ body {
     /* ===== ЦЕНА + "в пакет входит" ===== */
     /* ===== КНОПКА "смотреть видео" ===== */
   }
-  /* line 1482, ../your-day-project/src/sass/style.sass */
+  /* line 1614, ../your-day-project/your_day/sass/style.sass */
   .price-card__left, .price-card__right {
     display: contents;
   }
-  /* line 1486, ../your-day-project/src/sass/style.sass */
+  /* line 1618, ../your-day-project/your_day/sass/style.sass */
   .price-card__header {
     display: flex;
     align-items: center;
@@ -2225,7 +2396,7 @@ body {
     flex-wrap: wrap;
     margin-bottom: 8px;
   }
-  /* line 1495, ../your-day-project/src/sass/style.sass */
+  /* line 1627, ../your-day-project/your_day/sass/style.sass */
   .price-card__name {
     width: 100%;
     font-size: 22px;
@@ -2238,7 +2409,7 @@ body {
     width: auto;
     text-align: left;
   }
-  /* line 1507, ../your-day-project/src/sass/style.sass */
+  /* line 1639, ../your-day-project/your_day/sass/style.sass */
   .price-card__age {
     width: 44px;
     height: 44px;
@@ -2252,7 +2423,7 @@ body {
     justify-content: center;
     flex-shrink: 0;
   }
-  /* line 1521, ../your-day-project/src/sass/style.sass */
+  /* line 1653, ../your-day-project/your_day/sass/style.sass */
   .price-card__photo {
     order: 3;
     width: 100%;
@@ -2263,7 +2434,7 @@ body {
     height: auto;
     padding: 0px 0 5px 0;
   }
-  /* line 1530, ../your-day-project/src/sass/style.sass */
+  /* line 1662, ../your-day-project/your_day/sass/style.sass */
   .price-card__photo img {
     width: 100%;
     max-height: 200px;
@@ -2271,7 +2442,7 @@ body {
     display: block;
     border-radius: 16px 16px 80px 16px;
   }
-  /* line 1538, ../your-day-project/src/sass/style.sass */
+  /* line 1670, ../your-day-project/your_day/sass/style.sass */
   .price-card__chips {
     order: 2;
     width: 100%;
@@ -2281,7 +2452,7 @@ body {
     gap: 8px;
     margin: 0px auto 10px;
   }
-  /* line 1547, ../your-day-project/src/sass/style.sass */
+  /* line 1679, ../your-day-project/your_day/sass/style.sass */
   .price-card .chip {
     width: 100%;
     display: block;
@@ -2297,24 +2468,39 @@ body {
     white-space: normal;
     box-sizing: border-box;
   }
-  /* line 1563, ../your-day-project/src/sass/style.sass */
+  /* line 1695, ../your-day-project/your_day/sass/style.sass */
   .price-card__list {
     order: 4;
     width: 100%;
     max-width: 300px;
-    margin: 0 auto 0;
+    margin: 5px auto 0;
     padding: 0 0 5px 9px;
     font-size: 15px !important;
     line-height: 1.2;
     text-align: left;
     color: #334D38;
+    list-style: none;
+    padding-left: 0;
   }
-  /* line 1573, ../your-day-project/src/sass/style.sass */
+  /* line 1707, ../your-day-project/your_day/sass/style.sass */
+  .price-card__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  /* line 1712, ../your-day-project/your_day/sass/style.sass */
   .price-card__list li + li {
     margin-top: 6px;
     font-size: 15px;
   }
-  /* line 1578, ../your-day-project/src/sass/style.sass */
+  /* line 1716, ../your-day-project/your_day/sass/style.sass */
+  .price-card__icon {
+    font-size: 12px;
+    color: #5EA751;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  /* line 1723, ../your-day-project/your_day/sass/style.sass */
   .price-card__grid {
     order: 5;
     width: 100%;
@@ -2325,7 +2511,7 @@ body {
     gap: 8px;
     align-items: stretch;
   }
-  /* line 1588, ../your-day-project/src/sass/style.sass */
+  /* line 1733, ../your-day-project/your_day/sass/style.sass */
   .price-card__price {
     background: #B6FF98;
     border-radius: 10px 10px 40px 10px;
@@ -2337,9 +2523,9 @@ body {
     column-gap: 10px;
     align-items: flex-start;
     gap: 0px;
-    margin-top: 10px;
+    margin-top: 6px;
   }
-  /* line 1601, ../your-day-project/src/sass/style.sass */
+  /* line 1746, ../your-day-project/your_day/sass/style.sass */
   .price-card__price .price-card__price-title {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
@@ -2353,44 +2539,54 @@ body {
     font-size: 14px;
     border: 1px solid #334D38;
   }
-  /* line 1614, ../your-day-project/src/sass/style.sass */
+  /* line 1759, ../your-day-project/your_day/sass/style.sass */
   .price-card__price p {
     grid-column: 1 / 2;
     margin: 0 0 4px;
     padding: 0px 10px 0px 10px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.4;
   }
-  /* line 1620, ../your-day-project/src/sass/style.sass */
+  /* line 1765, ../your-day-project/your_day/sass/style.sass */
   .price-card__price p:last-child {
     margin-bottom: 0;
   }
-  /* line 1623, ../your-day-project/src/sass/style.sass */
+  /* line 1768, ../your-day-project/your_day/sass/style.sass */
   .price-card__includes {
     border: 1px solid rgba(51, 77, 56, 0.6);
     border-radius: 10px;
-    padding: 10px 10px 10px 8px;
+    padding: 0px 10px 10px 8px;
     text-align: left;
     color: #334D38;
     font-size: 8px;
     line-height: 1.2;
   }
-  /* line 1632, ../your-day-project/src/sass/style.sass */
+  /* line 1777, ../your-day-project/your_day/sass/style.sass */
   .price-card__includes-inner {
+    list-style: disc !important;
+    margin: 0 0 0 16px !important;
+    padding-left: 0 !important;
     padding: 0;
     margin: 0;
-    font-size: 11px;
+    font-size: 14px;
   }
-  /* line 1636, ../your-day-project/src/sass/style.sass */
+  /* line 1784, ../your-day-project/your_day/sass/style.sass */
   .price-card__includes-inner ul {
-    margin: 0 0 0 5px;
-    padding-left: 5px;
+    list-style-type: disc !important;
+    width: 100%;
+    margin: 6px 0 0 1.2em;
+    padding: 0;
   }
-  /* line 1639, ../your-day-project/src/sass/style.sass */
-  .price-card__includes-inner ul li + li {
+  /* line 1790, ../your-day-project/your_day/sass/style.sass */
+  .price-card__includes-inner li + li {
     margin-top: 6px;
   }
-  /* line 1644, ../your-day-project/src/sass/style.sass */
+  /* line 1794, ../your-day-project/your_day/sass/style.sass */
+  .price-card__includes-inner li:first-child {
+    list-style: none;
+    margin-left: -1.2em;
+  }
+  /* line 1800, ../your-day-project/your_day/sass/style.sass */
   .price-card__video {
     order: 6;
     position: static;
@@ -2411,75 +2607,16 @@ body {
     align-items: center;
     margin-bottom: 0;
   }
-  /* line 1664, ../your-day-project/src/sass/style.sass */
+  /* line 1820, ../your-day-project/your_day/sass/style.sass */
   .price-card__arrow {
     font-size: 16px;
     margin-left: 6px;
   }
 }
 
-@media (max-width: 768px) {
-  /* line 1668, ../your-day-project/src/sass/style.sass */
-  .price-carousel {
-    position: relative;
-  }
-  /* line 1671, ../your-day-project/src/sass/style.sass */
-  .price-carousel__track {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    gap: 12px;
-    will-change: auto;
-    transition: none;
-  }
-  /* line 1682, ../your-day-project/src/sass/style.sass */
-  .price-carousel__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 40px;
-    transform: translateY(-50%);
-    width: 36px;
-    height: 36px;
-    padding: 0;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border: none;
-    background: #B6FF98;
-    font-size: 20px;
-    line-height: 1;
-    cursor: pointer;
-    z-index: 5;
-  }
-  /* line 1701, ../your-day-project/src/sass/style.sass */
-  .price-carousel__btn:hover {
-    background: #B6FF98;
-    color: #fff;
-  }
-  /* line 1705, ../your-day-project/src/sass/style.sass */
-  .price-carousel__btn--prev {
-    display: none !important;
-    left: 20px;
-  }
-  /* line 1709, ../your-day-project/src/sass/style.sass */
-  .price-carousel__btn--next {
-    right: 20px;
-  }
-  /* line 1713, ../your-day-project/src/sass/style.sass */
-  .price-card {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-    margin: 0 0 32px;
-  }
-}
-
 /* ===== МОБИЛЬНЫЙ АДАПТИВ "ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ" ===== */
 @media (max-width: 768px) {
-  /* line 1723, ../your-day-project/src/sass/style.sass */
+  /* line 1827, ../your-day-project/your_day/sass/style.sass */
   .extras-section {
     background: #B6FF98;
     padding: 40px 16px 32px;
@@ -2487,13 +2624,13 @@ body {
     margin-top: 20px;
     /* главный заголовок остаётся на зелёном фоне */
   }
-  /* line 1729, ../your-day-project/src/sass/style.sass */
+  /* line 1833, ../your-day-project/your_day/sass/style.sass */
   .extras-section__container {
     max-width: 360px;
     margin: 0 auto;
     padding: 0;
   }
-  /* line 1735, ../your-day-project/src/sass/style.sass */
+  /* line 1839, ../your-day-project/your_day/sass/style.sass */
   .extras-section__title {
     text-align: center;
     width: 100%;
@@ -2505,7 +2642,7 @@ body {
     text-transform: uppercase;
   }
   /* каждая .extras — белая карточка под заголовком */
-  /* line 1746, ../your-day-project/src/sass/style.sass */
+  /* line 1850, ../your-day-project/your_day/sass/style.sass */
   .extras {
     background: #ffffff;
     border-radius: 20px 20px 20px 20px;
@@ -2516,7 +2653,7 @@ body {
     align-items: stretch !important;
     gap: 10px !important;
   }
-  /* line 1756, ../your-day-project/src/sass/style.sass */
+  /* line 1860, ../your-day-project/your_day/sass/style.sass */
   .extras__left {
     width: 100%;
     display: flex !important;
@@ -2525,7 +2662,7 @@ body {
     justify-content: space-between !important;
     gap: 8px !important;
   }
-  /* line 1764, ../your-day-project/src/sass/style.sass */
+  /* line 1868, ../your-day-project/your_day/sass/style.sass */
   .extras__subtitle {
     margin: 0 !important;
     flex: 1 1 auto !important;
@@ -2537,7 +2674,7 @@ body {
     margin-left: 10px !important;
   }
   /* блок цены внутри карточки */
-  /* line 1775, ../your-day-project/src/sass/style.sass */
+  /* line 1879, ../your-day-project/your_day/sass/style.sass */
   .extras-price {
     order: 0 !important;
     margin: 0 !important;
@@ -2548,7 +2685,7 @@ body {
     gap: 6px !important;
     white-space: nowrap !important;
   }
-  /* line 1785, ../your-day-project/src/sass/style.sass */
+  /* line 1889, ../your-day-project/your_day/sass/style.sass */
   .extras-price__badge {
     font-size: 14px !important;
     line-height: 1 !important;
@@ -2561,14 +2698,14 @@ body {
     justify-content: center !important;
     text-transform: uppercase !important;
   }
-  /* line 1797, ../your-day-project/src/sass/style.sass */
+  /* line 1901, ../your-day-project/your_day/sass/style.sass */
   .extras-price__text {
     font-size: 18px !important;
     line-height: 1.35 !important;
     margin: 0 !important;
   }
   /* карусель тоже внутри белой карточки */
-  /* line 1803, ../your-day-project/src/sass/style.sass */
+  /* line 1907, ../your-day-project/your_day/sass/style.sass */
   .extras__carousel,
   .extras-carousel {
     order: 3 !important;
@@ -2577,7 +2714,7 @@ body {
     position: relative !important;
     overflow: hidden !important;
   }
-  /* line 1811, ../your-day-project/src/sass/style.sass */
+  /* line 1915, ../your-day-project/your_day/sass/style.sass */
   .extras-carousel__track {
     display: flex !important;
     flex-wrap: nowrap;
@@ -2593,7 +2730,7 @@ body {
     transform: none !important;
     transition: none !important;
   }
-  /* line 1826, ../your-day-project/src/sass/style.sass */
+  /* line 1930, ../your-day-project/your_day/sass/style.sass */
   .extras-carousel__track > img {
     flex: 0 0 auto;
     width: 260px;
@@ -2603,11 +2740,11 @@ body {
     scroll-snap-align: center;
     display: block;
   }
-  /* line 1835, ../your-day-project/src/sass/style.sass */
+  /* line 1939, ../your-day-project/your_day/sass/style.sass */
   .extras-carousel__track::-webkit-scrollbar {
     display: none;
   }
-  /* line 1838, ../your-day-project/src/sass/style.sass */
+  /* line 1942, ../your-day-project/your_day/sass/style.sass */
   .carousel-btn {
     display: none;
     position: absolute !important;
@@ -2627,12 +2764,12 @@ body {
     line-height: 1 !important;
     z-index: 10;
   }
-  /* line 1858, ../your-day-project/src/sass/style.sass */
+  /* line 1962, ../your-day-project/your_day/sass/style.sass */
   .carousel-btn.prev {
     display: none !important;
     left: 0 !important;
   }
-  /* line 1862, ../your-day-project/src/sass/style.sass */
+  /* line 1966, ../your-day-project/your_day/sass/style.sass */
   .carousel-btn.next {
     display: none !important;
     right: 0 !important;
@@ -2644,7 +2781,7 @@ body {
 
 @media (max-width: 768px) {
   /* вся секция */
-  /* line 1872, ../your-day-project/src/sass/style.sass */
+  /* line 1976, ../your-day-project/your_day/sass/style.sass */
   .findus {
     background: #ffff !important;
     padding: 40px 32px 20px !important;
@@ -2652,7 +2789,7 @@ body {
     /* убираем большую зелёную дугу на мобиле */
     /* мы ПОЛНОСТЬЮ переопределяем сетку */
   }
-  /* line 1877, ../your-day-project/src/sass/style.sass */
+  /* line 1981, ../your-day-project/your_day/sass/style.sass */
   .findus__title {
     font-size: 28px !important;
     line-height: 1.2 !important;
@@ -2662,16 +2799,16 @@ body {
     text-transform: uppercase !important;
     text-align: center;
   }
-  /* line 1886, ../your-day-project/src/sass/style.sass */
+  /* line 1990, ../your-day-project/your_day/sass/style.sass */
   .findus__stage {
     position: relative !important;
     padding: 0 !important;
   }
-  /* line 1891, ../your-day-project/src/sass/style.sass */
+  /* line 1995, ../your-day-project/your_day/sass/style.sass */
   .findus__path {
     display: none !important;
   }
-  /* line 1895, ../your-day-project/src/sass/style.sass */
+  /* line 1999, ../your-day-project/your_day/sass/style.sass */
   .findus__grid {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -2685,7 +2822,7 @@ body {
     left: 0 !important;
   }
   /* общая карточка с фото (МЕТРО, МЕЧЕТЬ, ДОМ, ПАРКОВКА, СТУДИЯ) */
-  /* line 1908, ../your-day-project/src/sass/style.sass */
+  /* line 2012, ../your-day-project/your_day/sass/style.sass */
   .findus-card {
     flex: 1 1 calc(50% - 8px) !important;
     max-width: calc(50% - 8px) !important;
@@ -2696,7 +2833,7 @@ body {
     text-align: center !important;
     box-sizing: border-box !important;
   }
-  /* line 1918, ../your-day-project/src/sass/style.sass */
+  /* line 2022, ../your-day-project/your_day/sass/style.sass */
   .findus-card img {
     width: 100% !important;
     height: auto !important;
@@ -2705,11 +2842,11 @@ body {
     border-radius: 20px !important;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
   }
-  /* line 1926, ../your-day-project/src/sass/style.sass */
+  /* line 2030, ../your-day-project/your_day/sass/style.sass */
   .findus-card__idx {
     display: none !important;
   }
-  /* line 1929, ../your-day-project/src/sass/style.sass */
+  /* line 2033, ../your-day-project/your_day/sass/style.sass */
   .findus-card__caption {
     margin-top: 12px !important;
     font-size: 16px !important;
@@ -2719,7 +2856,7 @@ body {
     letter-spacing: .3px !important;
   }
   /* контейнер с "МЫ ТУТ!" */
-  /* line 1938, ../your-day-project/src/sass/style.sass */
+  /* line 2042, ../your-day-project/your_day/sass/style.sass */
   .findus-curvecell {
     flex: 1 1 calc(50% - 8px) !important;
     max-width: calc(50% - 8px) !important;
@@ -2732,7 +2869,7 @@ body {
     background: transparent !important;
   }
   /* сам блок "МЫ ТУТ!" */
-  /* line 1949, ../your-day-project/src/sass/style.sass */
+  /* line 2053, ../your-day-project/your_day/sass/style.sass */
   .findus-cta {
     margin-top: 32px !important;
     gap: 10px !important;
@@ -2747,7 +2884,7 @@ body {
     align-items: flex-start !important;
     justify-content: flex-start !important;
   }
-  /* line 1963, ../your-day-project/src/sass/style.sass */
+  /* line 2067, ../your-day-project/your_day/sass/style.sass */
   .findus-cta__title {
     font-size: 18px !important;
     line-height: 0.8 !important;
@@ -2755,7 +2892,7 @@ body {
     color: #5EA751 !important;
     margin: 0 0 0px 0 !important;
   }
-  /* line 1970, ../your-day-project/src/sass/style.sass */
+  /* line 2074, ../your-day-project/your_day/sass/style.sass */
   .findus-cta__addr {
     /* если адрес не нужен под "МЫ ТУТ!" - можно скрыть */
     display: block !important;
@@ -2765,21 +2902,21 @@ body {
     color: #5EA751 !important;
     margin: 0 0 8px 0 !important;
   }
-  /* line 1979, ../your-day-project/src/sass/style.sass */
+  /* line 2083, ../your-day-project/your_day/sass/style.sass */
   .findus-cta__btn {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     height: 36px !important;
     padding: 0 14px !important;
-    background: transparent !important;
-    border: 1px solid #5EA751 !important;
+    background: #B6FF98;
+    border: none;
     border-radius: 999px !important;
     color: #334D38 !important;
     cursor: pointer !important;
     margin: 0 !important;
   }
-  /* line 1992, ../your-day-project/src/sass/style.sass */
+  /* line 2097, ../your-day-project/your_day/sass/style.sass */
   .findus-cta__arrow {
     stroke: #5EA751 !important;
     stroke-width: 3px !important;
@@ -2788,46 +2925,120 @@ body {
     transform: rotate(180deg) !important;
   }
   /* 1. МЕТРО -> первый слева, верхняя строка */
-  /* line 2000, ../your-day-project/src/sass/style.sass */
+  /* line 2105, ../your-day-project/your_day/sass/style.sass */
   .findus__grid > *:nth-child(1) {
     order: 1 !important;
   }
   /* 2. МЕЧЕТЬ -> справа от метро */
-  /* line 2004, ../your-day-project/src/sass/style.sass */
+  /* line 2109, ../your-day-project/your_day/sass/style.sass */
   .findus__grid > *:nth-child(2) {
     order: 2 !important;
   }
   /* 3. ДОМ -> слева второй строки */
-  /* line 2008, ../your-day-project/src/sass/style.sass */
+  /* line 2113, ../your-day-project/your_day/sass/style.sass */
   .findus__grid > *:nth-child(3) {
     order: 3 !important;
   }
   /* 6. ПАРКОВКА (у тебя в HTML она идёт шестой!) должна оказаться
      справа второй строки, поэтому ставим order:4 */
-  /* line 2013, ../your-day-project/src/sass/style.sass */
+  /* line 2118, ../your-day-project/your_day/sass/style.sass */
   .findus__grid > *:nth-child(6) {
     order: 4 !important;
   }
   /* 5. СТУДИЯ должна быть снизу слева (третья строка левая) */
-  /* line 2017, ../your-day-project/src/sass/style.sass */
+  /* line 2122, ../your-day-project/your_day/sass/style.sass */
   .findus__grid > *:nth-child(5) {
     order: 5 !important;
   }
   /* 4. МЫ ТУТ! блок (findus-curvecell) должен быть снизу справа,
      то есть последним визуально */
-  /* line 2022, ../your-day-project/src/sass/style.sass */
+  /* line 2127, ../your-day-project/your_day/sass/style.sass */
   .findus__grid > *:nth-child(4) {
     order: 6 !important;
   }
 }
 
+/* line 2130, ../your-day-project/your_day/sass/style.sass */
+.findus-map__inner {
+  max-width: 800px;
+}
+
+/* line 2133, ../your-day-project/your_day/sass/style.sass */
+.findus-map__frame {
+  height: 400px;
+}
+
+/* line 2136, ../your-day-project/your_day/sass/style.sass */
+.reviews-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+/* line 2143, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__inner {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* line 2153, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* line 2168, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* line 2172, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--gis {
+  background-color: #5EA751;
+}
+
+/* line 2174, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--gis:hover {
+  background-color: #4f8c44;
+}
+
+/* line 2177, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--yandex {
+  background-color: #334D38;
+}
+
+/* line 2179, ../your-day-project/your_day/sass/style.sass */
+.reviews-section__btn--yandex:hover {
+  background-color: #233426;
+}
+
 @media (max-width: 768px) {
   /* футер: логотип слева, VK+почта справа */
-  /* line 2028, ../your-day-project/src/sass/style.sass */
+  /* line 2186, ../your-day-project/your_day/sass/style.sass */
   .footer {
     padding: 12px 0 !important;
   }
-  /* line 2031, ../your-day-project/src/sass/style.sass */
+  /* line 2189, ../your-day-project/your_day/sass/style.sass */
   .footer__container {
     max-width: 100% !important;
     padding: 0 16px !important;
@@ -2837,19 +3048,19 @@ body {
     justify-content: space-between !important;
     gap: 12px !important;
   }
-  /* line 2040, ../your-day-project/src/sass/style.sass */
+  /* line 2198, ../your-day-project/your_day/sass/style.sass */
   .footer__left {
     order: 1 !important;
     display: flex !important;
     align-items: flex-end;
     gap: 14px;
   }
-  /* line 2046, ../your-day-project/src/sass/style.sass */
+  /* line 2204, ../your-day-project/your_day/sass/style.sass */
   .footer__logo {
     width: 25px !important;
     height: auto !important;
   }
-  /* line 2051, ../your-day-project/src/sass/style.sass */
+  /* line 2209, ../your-day-project/your_day/sass/style.sass */
   .footer__brand {
     font-size: 10px !important;
     line-height: 1.1 !important;
@@ -2860,7 +3071,7 @@ body {
     position: relative;
     top: 2px;
   }
-  /* line 2061, ../your-day-project/src/sass/style.sass */
+  /* line 2219, ../your-day-project/your_day/sass/style.sass */
   .footer__right {
     order: 2 !important;
     display: flex !important;
@@ -2868,19 +3079,19 @@ body {
     gap: 8px !important;
     margin-top: 4px;
   }
-  /* line 2068, ../your-day-project/src/sass/style.sass */
+  /* line 2226, ../your-day-project/your_day/sass/style.sass */
   .footer__icon {
     width: 18px !important;
     height: auto !important;
   }
-  /* line 2072, ../your-day-project/src/sass/style.sass */
+  /* line 2230, ../your-day-project/your_day/sass/style.sass */
   .footer__mail {
     font-size: 14px !important;
     font-weight: 700 !important;
   }
 }
 
-/* line 2077, ../your-day-project/src/sass/style.sass */
+/* line 2235, ../your-day-project/your_day/sass/style.sass */
 .video-modal-2 {
   display: none;
   position: fixed;
@@ -2895,7 +3106,7 @@ body {
   z-index: 9999;
 }
 
-/* line 2089, ../your-day-project/src/sass/style.sass */
+/* line 2247, ../your-day-project/your_day/sass/style.sass */
 .video-modal-2__body {
   width: 100%;
   padding: 20px 10px;
@@ -2905,12 +3116,12 @@ body {
   color: #334D38;
 }
 
-/* line 2097, ../your-day-project/src/sass/style.sass */
+/* line 2255, ../your-day-project/your_day/sass/style.sass */
 .video-modal-2.active {
   display: flex;
 }
 
-/* line 2100, ../your-day-project/src/sass/style.sass */
+/* line 2258, ../your-day-project/your_day/sass/style.sass */
 .video-modal-2__content {
   background: #fff;
   padding: 24px 32px;
@@ -2923,7 +3134,7 @@ body {
   animation: fadeIn .3s ease;
 }
 
-/* line 2111, ../your-day-project/src/sass/style.sass */
+/* line 2269, ../your-day-project/your_day/sass/style.sass */
 .video-modal-2__close {
   margin-top: 16px;
   background: #b2f7a1;
@@ -2936,7 +3147,7 @@ body {
   transition: background .2s ease;
 }
 
-/* line 2121, ../your-day-project/src/sass/style.sass */
+/* line 2279, ../your-day-project/your_day/sass/style.sass */
 .video-modal-2__close:hover {
   background: #a2ec90;
 }

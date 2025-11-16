@@ -1,5 +1,5 @@
 /* line 1, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 2, ../your-day-project/src/sass/resets.scss */
+/* line 2, ../your-day-project/your_day/sass/resets.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,38 +22,38 @@ time, mark, audio, video {
 }
 
 /* line 21, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 24, ../your-day-project/src/sass/resets.scss */
+/* line 24, ../your-day-project/your_day/sass/resets.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 /* line 25, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 30, ../your-day-project/src/sass/resets.scss */
+/* line 30, ../your-day-project/your_day/sass/resets.scss */
 html {
   height: 100%;
 }
 
 /* line 28, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 35, ../your-day-project/src/sass/resets.scss */
+/* line 35, ../your-day-project/your_day/sass/resets.scss */
 body {
   line-height: 1;
 }
 
 /* line 31, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 40, ../your-day-project/src/sass/resets.scss */
+/* line 40, ../your-day-project/your_day/sass/resets.scss */
 ol, ul {
   list-style: none;
 }
 
 /* line 34, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 45, ../your-day-project/src/sass/resets.scss */
+/* line 45, ../your-day-project/your_day/sass/resets.scss */
 blockquote, q {
   quotes: none;
 }
 
 /* line 37, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 50, ../your-day-project/src/sass/resets.scss */
+/* line 50, ../your-day-project/your_day/sass/resets.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -61,7 +61,7 @@ q:before, q:after {
 }
 
 /* line 42, ../../../../../OneDrive/Desktop/project-2/src/sass/resets.scss */
-/* line 57, ../your-day-project/src/sass/resets.scss */
+/* line 57, ../your-day-project/your_day/sass/resets.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;

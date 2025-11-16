@@ -15,6 +15,11 @@
       const prevBtn = carousel.querySelector(".carousel-btn.prev");
       const nextBtn = carousel.querySelector(".carousel-btn.next");
 
+      if (!track || !prevBtn || !nextBtn) {
+        console.warn("extras-carousel: нет трека или кнопок для", carousel);
+        return;
+      }
+
       // на мобилке стрелки должны работать, так что не скрываем их
       // (если ты где-то их display:none делаешь в CSS для мобилки — убери это)
 
@@ -295,60 +300,108 @@
 
 //КАРУСУЛЬ ПРАЙСОВ
 // price-carousel.js
+//ТУТ КАРУСЕЛЬ С ТОЧКАМИ
 document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.querySelector('.price-carousel');
   if (!carousel) return;
 
   const track  = carousel.querySelector('.price-carousel__track');
-  const slides = Array.from(track ? track.querySelectorAll('.price-card') : []);
+  if (!track) return;
+
+  const slides = Array.from(track.querySelectorAll('.price-card'));
+  const dots   = Array.from(carousel.querySelectorAll('.price-carousel__dot'));
   const nextBtn = carousel.querySelector('.price-carousel__btn--next');
 
-  if (!track || !slides.length || !nextBtn) return;
+  if (!slides.length || !dots.length) return;
 
-  const GAP = 12; // как в SASS
-  let index = 0;
-
+  let currentIndex = 0;
   const isMobile = () => window.matchMedia('(max-width: 768px)').matches;
 
-  function getSlideWidth() {
-    if (!slides.length) return 0;
-    const rect = slides[0].getBoundingClientRect();
-    return rect.width + GAP;
+  function setActiveDot(i) {
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('price-carousel__dot--active', idx === i);
+    });
   }
 
-  function scrollToIndex(i) {
-  const slideWidth = getSlideWidth();
-  if (!slideWidth) return;
+  function getSlideWidth() {
+    const first = slides[0];
+    if (!first) return 0;
+    return first.getBoundingClientRect().width;
+  }
 
-  index = Math.max(0, Math.min(i, slides.length - 1));
+  function goToSlide(i, smooth = true) {
+    const maxIndex = slides.length - 1;
+    currentIndex = Math.max(0, Math.min(i, maxIndex));
 
-  track.scrollTo({
-    left: slideWidth * index,
-    behavior: 'smooth',
-  });
-}
-
-  nextBtn.addEventListener('click', () => {
-    scrollToIndex(index + 1);
-  });
-
-  // следим за скроллом пальцем и обновляем index
-  track.addEventListener('scroll', () => {
-    if (!isMobile()) return;
     const slideWidth = getSlideWidth();
     if (!slideWidth) return;
-    index = Math.round(track.scrollLeft / slideWidth);
+
+    const targetLeft = currentIndex * slideWidth;
+
+    track.scrollTo({
+      left: targetLeft,
+      behavior: smooth ? 'smooth' : 'auto',
+    });
+
+    setActiveDot(currentIndex);
+  }
+
+  // пересчёт индекса по scrollLeft
+  function updateIndexFromScroll() {
+    if (!isMobile()) return;
+
+    const slideWidth = getSlideWidth();
+    if (!slideWidth) return;
+
+    const rawIndex = track.scrollLeft / slideWidth;
+    const newIndex = Math.round(rawIndex);
+
+    if (newIndex !== currentIndex) {
+      currentIndex = newIndex;
+      setActiveDot(currentIndex);
+    }
+  }
+
+  // клики по точкам
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      if (!isMobile()) return;
+      goToSlide(i, true);
+    });
   });
 
+  // кнопка "вперёд" (если решишь показывать)
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      if (!isMobile()) return;
+      goToSlide(currentIndex + 1, true);
+    });
+  }
+
+  // обновляем активную точку при свайпе
+  track.addEventListener('scroll', () => {
+    if (!isMobile()) return;
+    window.requestAnimationFrame(updateIndexFromScroll);
+  });
+
+  // при ресайзе — пересчитать позицию
   window.addEventListener('resize', () => {
     if (!isMobile()) {
-      // при выходе из мобилы сбрасываем скролл
-      track.scrollTo({ left: 0 });
-      index = 0;
+      currentIndex = 0;
+      track.scrollTo({ left: 0, behavior: 'auto' });
+      setActiveDot(0);
+    } else {
+      goToSlide(currentIndex, false);
     }
   });
-});
 
+  // стартовое состояние
+  if (isMobile()) {
+    goToSlide(0, false);
+  } else {
+    setActiveDot(0);
+  }
+});
 
 
 

@@ -2,8 +2,10 @@
 @import "resets.scss"
 
 $main-font: 'Nunito Sans', sans-serif
+$second-font: 'Yeseva One', serif
+
 $main-color: #ffffff
-$text-color: #334D38
+$text-color: #236a49
 $text-color-light: #5EA751
 $main-color-green: #B6FF98
 
@@ -500,6 +502,7 @@ body
                 width: 100%
                 margin: 6px 16px
                 padding: 0
+                list-style-type: disc !important
                 li + li
     &__video                     // ⬅️ БЫЛО ошибочно под .price-card__price-title
         position: absolute
@@ -930,6 +933,72 @@ $text-color-light: #5EA751
     transition: color .2s ease
     &:hover
       color: darken($text-color-light, 10%)
+.findus-map
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 24px
+  margin-bottom: 32px
+
+  &__inner
+    width: 100%
+    max-width: 420px        // ширина, примерно как у блока "как нас найти"
+    padding: 0 16px
+    box-sizing: border-box
+
+  &__frame
+    width: 100%
+    height: 260px           // можно поменять на 300–350, если хочешь выше
+    border: none
+    border-radius: 20px
+    box-shadow: 0 8px 20px rgba(0,0,0,.08)
+
+.reviews-section
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 16px
+  margin-bottom: 40px
+
+  &__inner
+    width: 100%
+    max-width: 420px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 12px
+    padding: 0 16px
+    box-sizing: border-box
+
+  &__btn
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 300px
+    padding: 12px 16px
+    font-size: 15px
+    font-weight: 600
+    border-radius: 9999px
+    text-decoration: none
+    text-align: center
+    color: #fff
+    transition: transform 0.2s ease, box-shadow 0.3s ease
+
+    &:hover
+      transform: translateY(-2px)
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12)
+
+  &__btn--gis
+    background-color: #00B341       // 2GIS зелёный
+    &:hover
+      background-color: darken(#00B341, 8%)
+
+  &__btn--yandex
+    background-color: #FC3F1D       // Яндекс красный
+    &:hover
+      background-color: darken(#FC3F1D, 8%)
+
 
 .video-modal
   position: fixed
@@ -1049,6 +1118,22 @@ $text-color-light: #5EA751
       color: $text-color-light
       text-decoration: none
       font-weight: 700
+  .whatsapp-btn
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    background-color: $text-color-light
+    color: #ffffff !important
+    font-size: 12px
+    font-weight: 200
+    line-height: 1.2
+    border: none
+    border-radius: 9999px
+    padding: 6px 12px
+    text-decoration: none
+    &:hover
+      background-color:#25D366
+      transform: translateY(-1px)
 
   /* ===== HERO: ЗАГОЛОВОК + ФОТО + ЗЕЛЁНАЯ ПИЛЮЛЯ ===== */
 
@@ -1098,8 +1183,8 @@ $text-color-light: #5EA751
       position: static
       z-index: 5         // кнопка поверх белого блока
       order: 3
+      color: $text-color-light
       background-color: $main-color-green
-      color: $text-color
       border: none
       border-radius: 100px
       font-size: 16px
@@ -1161,6 +1246,7 @@ $text-color-light: #5EA751
       font-weight: 600
 
     &__emoji
+      display: none
       display: inline-block
       vertical-align: middle
       margin: 0 6px          // чуть больше отступы
@@ -1185,6 +1271,7 @@ $text-color-light: #5EA751
     border-top-right-radius: 80px
     padding: 40px 16px
     min-height: auto
+    background: $main-color-green
 
     &__header
       flex-direction: column
@@ -1198,7 +1285,7 @@ $text-color-light: #5EA751
       font-size: 28px
       font-weight: 800
       line-height: 1.2
-      color: $text-color-light
+      color: #ffff
 
     &__note
       font-size: 16px
@@ -1319,7 +1406,7 @@ $text-color-light: #5EA751
     font-size: 45px           // вместо 85px
     line-height: 1.2
     font-weight: 700
-    color: $main-color-green  // зелёный текст, как на макете
+    color: $text-color-light  // зелёный текст, как на макете
     margin: 8px 0 12px 0
 
   .block__text-2
@@ -1385,27 +1472,28 @@ $text-color-light: #5EA751
       flex-direction: column
       align-items: center
       text-align: center
+      gap: 25px
 
     &__photo
       width: 100%
       max-width: 260px
       margin: 0 auto -10px auto
       aspect-ratio: auto
-      border-radius: 16px
+      border-radius: 16px 16px 60px 16px
       overflow: hidden
       img
         width: 100%
-        height: auto
+        height: 260px
         object-fit: cover
         display: block
-        border-radius: 16px
+        border-radius: 16px 16px 30px 16px
         box-shadow: 0 16px 30px rgba(0,0,0,.08)
 
     &__text
       // подпись под фото
       transform: none
       margin: 0
-      font-size: 14px
+      font-size: 16px
       line-height: 1.45
       font-weight: 500
       color: $text-color
@@ -1415,14 +1503,73 @@ $text-color-light: #5EA751
 /* ===== МОБИЛЬНЫЙ ПРАЙС-ПАКЕТ (все экраны до 768px) ===== */
 @media (max-width: 768px)
   /* сама секция */
+  .price-carousel
+    position: relative
+    //БЛОК ТОЧЕК DOTS
+    &__dots
+      display: flex
+      justify-content: center
+      gap: 6px
+      margin-top: -4px
+      margin-bottom: 16px
+
+    &__dot
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      border: none
+      padding: 0
+      background: rgba($text-color-light, .3)
+
+      &--active
+        background: $text-color-light
+    &__track
+      display: flex
+      flex-direction: row
+      overflow-x: auto
+      -webkit-overflow-scrolling: touch
+      scroll-snap-type: x mandatory
+      scroll-snap-stop: always
+      gap: 0px
+  
+
+    // стрелки как у тебя были
+    &__btn
+      display: inline-flex
+      align-items: center
+      justify-content: center
+
+      position: absolute
+      top: 40px                // 👈 подними/опусти как нужно, сейчас около заголовка
+      transform: translateY(-50%)
+      width: 36px
+      height: 36px
+      padding: 0                // 👈 чтобы круг не растягивался
+      border-radius: 50%
+      box-sizing: border-box
+      border: none
+      background: $main-color-green
+      font-size: 20px
+      line-height: 1
+      cursor: pointer
+      z-index: 5
+      &:hover
+        background: $main-color-green  // тёмно-зелёный/текстовый
+        color: #fff  
+
+    &__btn--prev
+      display: none !important
+      left: 20px
+
+    &__btn--next
+      display: none
+      right: 20px
   .price-section
-    /* убираем жесткую ширину 1291px */
     width: 100%
     min-height: auto
     padding: 24px 16px 40px
     padding-bottom: 40px
-    background: #ffff
-    /* чтобы секция не растягивалась вбок */
+    background: #fff
     display: flex
     flex-direction: column
     align-items: center
@@ -1455,29 +1602,15 @@ $text-color-light: #5EA751
 
   /* каждая карточка пакета */
   .price-card
-    /* самое важное для выравнивания */
-    width: 388px
-    max-width: 388px       // карточка никогда не шире этого
-    margin: 0 auto 32px     // центрируем
-    box-sizing: border-box
-
-    /* внешний вид карточки */
-    background: #fff
-    border: 1px solid rgba($text-color, .9)
-    border-radius: 20px 20px 20px 20px
-    
-    /* перестраиваем сетку -> столбик */
-    display: flex
-    flex-direction: column
-    align-items: center
-    text-align: center
-    gap: 8px
-    padding: 15px 16px 10px!important
-    position: relative
-
-    /* отключаем десктопную сетку */
+    width: 100%
+    max-width: 100%
     grid-template-columns: unset
     box-sizing: border-box
+    flex: 0 0 100%           // одна карточка = один экран
+    scroll-snap-align: center
+    scroll-snap-stop: always
+    gap: 0px
+    margin: 0
 
     &__left,
     &__right
@@ -1564,15 +1697,28 @@ $text-color-light: #5EA751
       order: 4
       width: 100%
       max-width: 300px
-      margin: 0 auto 0
+      margin: 5px auto 0
       padding: 0 0 5px 9px
       font-size: 15px!important
       line-height: 1.2
       text-align: left
       color: $text-color
-      li + li
-        margin-top: 6px
-        font-size: 15px
+      list-style: none          // убираем цифры
+      padding-left: 0
+      li
+        display: flex
+        align-items: flex-start
+        gap: 6px
+
+        + li
+          margin-top: 6px
+          font-size: 15px
+
+    &__icon
+      font-size: 12px
+      color: $text-color-light
+      margin-top: 2px          // чуть опустить иконку, чтобы красиво по baseline
+      flex-shrink: 0
 
     /* ===== ЦЕНА + "в пакет входит" ===== */
     &__grid
@@ -1596,7 +1742,7 @@ $text-color-light: #5EA751
       column-gap: 10px
       align-items: flex-start
       gap: 0px
-      margin-top: 10px
+      margin-top: 6px
 
       .price-card__price-title
         grid-column: 2 / 3               // правая колонка
@@ -1615,7 +1761,7 @@ $text-color-light: #5EA751
         grid-column: 1 / 2           // оба параграфа в левой колонке
         margin: 0 0 4px
         padding: 0px 10px 0px 10px
-        font-size: 14px
+        font-size: 13px
         line-height: 1.4
         &:last-child
           margin-bottom: 0
@@ -1623,21 +1769,32 @@ $text-color-light: #5EA751
     &__includes
       border: 1px solid rgba($text-color,.6)
       border-radius: 10px
-      padding: 10px 10px 10px 8px
+      padding: 0px 10px 10px 8px
       text-align: left
       color: $text-color
       font-size: 8px
       line-height: 1.2
 
       &-inner
+        list-style: disc !important      // ← включаем точки
+        margin: 0 0 0 16px !important    // ← отступ, чтобы точка была видна
+        padding-left: 0 !important
         padding: 0
         margin: 0
-        font-size: 11px
+        font-size: 14px
         ul
-          margin: 0 0 0 5px
-          padding-left: 5px
-          li + li
-            margin-top: 6px
+          list-style-type: disc !important
+          width: 100%
+          margin: 6px 0 0 1.2em   // отступ, чтобы точка не залипала к рамке
+          padding: 0
+
+        li + li
+          margin-top: 6px
+
+        // первая строка "Также в пакет входит:" — без точки
+        li:first-child
+          list-style: none
+          margin-left: -1.2em
             
 
     /* ===== КНОПКА "смотреть видео" ===== */
@@ -1664,58 +1821,6 @@ $text-color-light: #5EA751
     &__arrow
       font-size: 16px
       margin-left: 6px
-@media (max-width: 768px)
-  .price-carousel
-    position: relative
-
-    &__track
-      display: flex
-      flex-direction: row
-      overflow-x: auto          // 👈 скролл пальцем
-      -webkit-overflow-scrolling: touch
-      scroll-snap-type: x mandatory
-      gap: 12px
-      will-change: auto         // transform нам больше не нужен
-      transition: none
-
-    // стрелки как у тебя были
-    &__btn
-      display: inline-flex
-      align-items: center
-      justify-content: center
-
-      position: absolute
-      top: 40px                // 👈 подними/опусти как нужно, сейчас около заголовка
-      transform: translateY(-50%)
-      width: 36px
-      height: 36px
-      padding: 0                // 👈 чтобы круг не растягивался
-      border-radius: 50%
-      box-sizing: border-box
-      border: none
-      background: $main-color-green
-      font-size: 20px
-      line-height: 1
-      cursor: pointer
-      z-index: 5
-      &:hover
-        background: $main-color-green  // тёмно-зелёный/текстовый
-        color: #fff  
-
-    &__btn--prev
-      display: none !important
-      left: 20px
-
-    &__btn--next
-      right: 20px
-
-  // внутри мобильных стилей для .price-card добавь/убедиcь, что так:
-  .price-card
-    width: 100%
-    max-width: 100%
-    flex: 0 0 100%          // чтобы карусель знает, что слайд = 100% ширины
-    margin: 0 0 32px          // чтобы ничего не торчало сбоку
-
 
 
 /* ===== МОБИЛЬНЫЙ АДАПТИВ "ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ" ===== */
@@ -1982,8 +2087,9 @@ $text-color-light: #5EA751
       justify-content: center !important
       height: 36px !important
       padding: 0 14px !important
-      background: transparent !important  /* было зелёным — убираем заливку */
-      border: 1px solid $text-color-light !important
+      background: $main-color-green
+      border: none
+      //border: 1px solid $text-color-light !important
       border-radius: 999px !important
       color: $text-color !important
       cursor: pointer !important
@@ -2021,6 +2127,59 @@ $text-color-light: #5EA751
      то есть последним визуально */
   .findus__grid > *:nth-child(4)
     order: 6 !important
+
+.findus-map__inner
+  max-width: 800px
+
+.findus-map__frame
+  height: 400px
+
+.reviews-section
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 16px
+  margin-bottom: 40px
+
+  &__inner
+    width: 100%
+    max-width: 420px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 12px
+    padding: 0 16px
+    box-sizing: border-box
+
+  &__btn
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 300px
+    padding: 12px 16px
+    font-size: 15px
+    font-weight: 600
+    border-radius: 9999px
+    text-decoration: none
+    text-align: center
+    color: #fff
+    transition: transform 0.2s ease, box-shadow 0.3s ease
+
+    &:hover
+      transform: translateY(-2px)
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12)
+
+  &__btn--gis
+    background-color: $text-color-light
+    &:hover
+      background-color: darken($text-color-light, 8%)
+
+  &__btn--yandex
+    background-color: $text-color
+    &:hover
+      background-color: darken($text-color, 8%) 
+
 
 //ФУТЕР
 @media (max-width: 768px)
