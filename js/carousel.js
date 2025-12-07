@@ -444,3 +444,43 @@ function fixVh() {
 window.addEventListener('resize', fixVh);
 window.addEventListener('orientationchange', fixVh);
 fixVh();
+
+//ОТЗЫВЫ
+// reviews-photozone-carousel.js
+(function () {
+  const MOBILE_BREAKPOINT = 768;
+
+  // На мобильных НИЧЕГО не делаем – работает нативный скролл
+  if (window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`).matches) {
+    return;
+  }
+
+  // Десктоп: листаем по кнопкам
+  document.querySelectorAll('.reviews-card__carousel').forEach((carousel) => {
+    const track = carousel.querySelector('.carousel-mod');
+    const slides = Array.from(track.querySelectorAll('img'));
+    const prevBtn = carousel.querySelector('.carousel-button.prev');
+    const nextBtn = carousel.querySelector('.carousel-button.next');
+
+    if (!track || !slides.length || !prevBtn || !nextBtn) return;
+
+    let index = 0;
+
+    function goTo(i) {
+      if (i < 0) i = slides.length - 1;
+      if (i >= slides.length) i = 0;
+      index = i;
+
+      const target = slides[index];
+      const offset = target.offsetLeft;
+
+      track.scrollTo({
+        left: offset,
+        behavior: 'smooth',
+      });
+    }
+
+    prevBtn.addEventListener('click', () => goTo(index - 1));
+    nextBtn.addEventListener('click', () => goTo(index + 1));
+  });
+})();
