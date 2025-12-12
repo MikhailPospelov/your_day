@@ -1065,44 +1065,53 @@ $text-color-light: #5EA751
       background: $main-color-green
       transform: translate(-50%, -50%)
       z-index: 6
-      animation: findus-ball-path 10s linear infinite, findus-ball-blink 10s steps(1, end) infinite
+      animation: findus-ball-path 6s linear infinite
+
 
 @keyframes findus-ball-path
-  /* 1 → 2 → 3 (верхний ряд) */
+  /* 1 → 2 → 3 */
   0%
     left: 10%
     top: 34%
-
-  10%
-    left: 39%
-    top: 34%
-
-  20%
-    left: 69%
-    top: 34%
-
-  /* вниз строго вертикально */
-  30%
-    left: 69%
-    top: 87%
-
-  /* горизонтально в кнопку */
-  40%
-    left: 19%
-    top: 87%
-
-  /* ❗ дальше шарик НЕ двигается */
-  100%
-    left: 19%
-    top: 87%
-
-@keyframes findus-ball-blink
-  /* шарик виден во время движения */
-  0%, 39%
     opacity: 1
 
-  /* исчез сразу после заезда в кнопку */
-  40%, 100%
+  15%
+    left: 39%
+    top: 34%
+    opacity: 1
+
+  30%
+    left: 69%
+    top: 34%
+    opacity: 1
+
+  /* строго вниз */
+  45%
+    left: 69%
+    top: 87%
+    opacity: 1
+
+  /* в кнопку */
+  60%
+    left: 19%
+    top: 87%
+    opacity: 1
+
+  /* 💥 мгновенно исчез и СРАЗУ новый цикл */
+  60.01%
+    opacity: 0
+
+  100%
+    opacity: 0
+
+
+@keyframes findus-ball-blink
+  // видим пока едет (до кнопки)
+  0%, 41.9%
+    opacity: 1
+
+  // сразу после короткой паузы — скрываем до конца цикла
+  42%, 100%
     opacity: 0
 
 
@@ -1541,6 +1550,8 @@ $text-color-light: #5EA751
       background: url('../image/SMILE.png') no-repeat center / contain
       pointer-events: none
       z-index: 2
+      display: none !important
+      content: none !important
 
     /* ПРАВАЯ КАРТИНКА */
     &::after
@@ -1553,6 +1564,8 @@ $text-color-light: #5EA751
       background: url('../image/STARS.png') no-repeat center / contain
       pointer-events: none
       z-index: 2
+      display: none !important
+      content: none !important
 
     &__container
       max-width: 388px
