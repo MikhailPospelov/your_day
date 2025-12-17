@@ -1533,7 +1533,7 @@ $text-color-light: #5EA751
       position: absolute
       left: 1%
       top: calc(100% * #{$hero-notch-y} / #{$hero-img-height})
-      margin: 0
+      margin-top: 5px
       font-family: $third-font
       line-height: 0.8
       letter-spacing: 1px
@@ -1690,12 +1690,15 @@ $text-color-light: #5EA751
     background-repeat: no-repeat
     background-position: center top
     background-size: 100% auto
-    padding: 60px 16px 0px
+    padding: 40px 16px 0px
     border-radius: 20px
     position: relative
     margin-top: -16px       // легкое перекрытие зелёного блока
     z-index: 3              // выше intro-green, ниже героя
-    overflow: visible        // см. пункт 2
+    overflow: visible
+    min-height: unset !important
+    height: auto !important
+    padding-bottom: 40px      // см. пункт 2
 
     &::after
       content: ""
@@ -1715,7 +1718,8 @@ $text-color-light: #5EA751
       justify-content: center
       text-align: center 
       gap: 25px
-      margin-bottom: 24px
+      margin-bottom: 0px
+      margin-top: 15px
 
     &__title
       font-family: $third-font
@@ -1758,7 +1762,7 @@ $text-color-light: #5EA751
     gap: 12px
     padding: 16px 0
     border-width: 1px
-    padding-top: 20px
+    padding-top: 18px
     padding-bottom: 12px
     row-gap: 12px
 
@@ -1777,13 +1781,13 @@ $text-color-light: #5EA751
       color: $text-color
       font-weight: 500
     &::last-child
-      padding-bottom: 0
+      padding-bottom: 10px
   
   // ===== СЕКЦИЯ "ОБЗОР СТУДИИ" (мобилка) =====
   .four-section
     background-color: #FFFBEC
     padding: 0px 16px 0px
-    margin-top: 0
+    margin-top: 50px
 
     &__header
       // на мобиле заголовок и кнопка идут столбиком по центру
@@ -2070,7 +2074,7 @@ $text-color-light: #5EA751
     max-width: 100%
     grid-template-columns: unset
     box-sizing: border-box
-    border: 2px solid $text-color
+    border: 1px solid $text-color
     flex: 0 0 100%           // одна карточка = один экран
     scroll-snap-align: center
     scroll-snap-stop: always
