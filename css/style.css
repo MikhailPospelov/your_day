@@ -593,7 +593,7 @@ body {
 
 /* line 118, ../your-day-project/your_day/sass/style.sass */
 .wrapper__btn {
-  background-color: #F7BBD7;
+  background-color: #D0E9FF;
   color: #3C8450;
   position: absolute;
   left: 70px;
@@ -1218,7 +1218,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   margin-right: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
   cursor: pointer;
   margin-left: auto;
 }
