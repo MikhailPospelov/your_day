@@ -2186,9 +2186,9 @@ body {
   .main-section__header {
     display: flex;
     flex-direction: row;
-    align-items: flex-end !important;
     gap: 8px;
-    flex-wrap: nowrap;
+    flex-wrap: baseline;
+    justify-content: center;
     /* логотип сильно уменьшаем */
   }
   /* line 1452, ../your-day-project/your_day/sass/style.sass */

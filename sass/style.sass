@@ -1443,10 +1443,10 @@ $text-color-light: #5EA751
 
     &__header
       display: flex
-      flex-direction: row          // ← выстраиваем элементы по горизонтали
-      align-items: flex-end !important         // ← выравниваем логотип и текст по центру по вертикали
+      flex-direction: row            
       gap: 8px                    // ← расстояние между логотипом и текстом
-      flex-wrap: nowrap 
+      flex-wrap: baseline
+      justify-content: center
 
       /* логотип сильно уменьшаем */
       img
