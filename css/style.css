@@ -3737,40 +3737,41 @@ body {
 /* line 2821, ../your-day-project/your_day/sass/style.sass */
 .cookie-banner {
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 99999;
+  padding: 0 16px;
 }
 
-/* line 2830, ../your-day-project/your_day/sass/style.sass */
+/* line 2832, ../your-day-project/your_day/sass/style.sass */
 .cookie-banner__box {
   background: #eaf7ea;
-  padding: 20px 16px;
-  border-radius: 16px;
+  padding: 16px 20px;
+  border-radius: 16px 16px 0 0;
   width: 300px;
-  max-width: 90%;
+  max-width: 100%;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* line 2839, ../your-day-project/your_day/sass/style.sass */
+/* line 2840, ../your-day-project/your_day/sass/style.sass */
 .cookie-text {
-  margin-bottom: 16px;
-  font-size: 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
   line-height: 1.4;
   color: #2e6b2e;
   text-align: center;
 }
 
-/* line 2846, ../your-day-project/your_day/sass/style.sass */
+/* line 2847, ../your-day-project/your_day/sass/style.sass */
 .cookie-text span {
   display: block;
 }
 
-/* line 2849, ../your-day-project/your_day/sass/style.sass */
+/* line 2850, ../your-day-project/your_day/sass/style.sass */
 .cookie-banner button {
   background: #4caf50;
   border: none;
@@ -3782,22 +3783,22 @@ body {
   transition: background .2s ease;
 }
 
-/* line 2859, ../your-day-project/your_day/sass/style.sass */
+/* line 2860, ../your-day-project/your_day/sass/style.sass */
 .cookie-banner button:hover {
   background: #43a047;
 }
 
 @media (orientation: landscape) and (max-height: 520px) {
-  /* line 2866, ../your-day-project/your_day/sass/style.sass */
+  /* line 2867, ../your-day-project/your_day/sass/style.sass */
   html, body {
     height: 100%;
     overflow: hidden !important;
   }
-  /* line 2870, ../your-day-project/your_day/sass/style.sass */
+  /* line 2871, ../your-day-project/your_day/sass/style.sass */
   body {
     position: relative;
   }
-  /* line 2873, ../your-day-project/your_day/sass/style.sass */
+  /* line 2874, ../your-day-project/your_day/sass/style.sass */
   body::before {
     content: "Поверните телефон вертикально";
     position: fixed;
@@ -3816,7 +3817,7 @@ body {
     font-size: 18px;
     font-weight: 800;
   }
-  /* line 2891, ../your-day-project/your_day/sass/style.sass */
+  /* line 2892, ../your-day-project/your_day/sass/style.sass */
   body::after {
     content: "";
     position: fixed;
@@ -3831,7 +3832,7 @@ body {
   }
 }
 
-/* line 2904, ../your-day-project/your_day/sass/style.sass */
+/* line 2905, ../your-day-project/your_day/sass/style.sass */
 .offline-overlay {
   display: none;
   position: fixed;
@@ -3846,14 +3847,14 @@ body {
   padding: 24px;
 }
 
-/* line 2917, ../your-day-project/your_day/sass/style.sass */
+/* line 2918, ../your-day-project/your_day/sass/style.sass */
 .offline-overlay img {
   max-width: 220px;
   width: 100%;
   margin-bottom: 16px;
 }
 
-/* line 2922, ../your-day-project/your_day/sass/style.sass */
+/* line 2923, ../your-day-project/your_day/sass/style.sass */
 .offline-overlay p {
   font-size: 18px;
   font-weight: 800;
@@ -3861,11 +3862,11 @@ body {
 }
 
 @media (min-width: 769px) {
-  /* line 2929, ../your-day-project/your_day/sass/style.sass */
+  /* line 2930, ../your-day-project/your_day/sass/style.sass */
   .reviews-section__inner {
     max-width: 700px;
   }
-  /* line 2932, ../your-day-project/your_day/sass/style.sass */
+  /* line 2933, ../your-day-project/your_day/sass/style.sass */
   .reviews-section__btn {
     max-width: 700px;
     padding: 20px 36px;

@@ -2820,25 +2820,26 @@ $text-color-light: #5EA751
 ///////КУКИ
 .cookie-banner
   position: fixed
-  inset: 0
-  background: rgba(0, 0, 0, 0.4)
+  left: 0
+  right: 0
+  bottom: 0        // ⬅ теперь снизу экрана
   display: none
   align-items: center
   justify-content: center
   z-index: 99999
+  padding: 0 16px   // чтобы по бокам не сливалось
 
   &__box
     background: #eaf7ea
-    padding: 20px 16px
-    border-radius: 16px
-    width: 300px   // ⬅ уменьшили ширину
-    max-width: 90%
+    padding: 16px 20px
+    border-radius: 16px 16px 0 0  // верхние скругления
+    width: 300px
+    max-width: 100%
     text-align: center
-    box-shadow: 0 10px 30px rgba(0,0,0,.2)
 
 .cookie-text
-  margin-bottom: 16px
-  font-size: 12px
+  margin-bottom: 12px
+  font-size: 13px
   line-height: 1.4
   color: #2e6b2e
   text-align: center

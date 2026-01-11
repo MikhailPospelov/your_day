@@ -959,18 +959,18 @@ window.addEventListener('offline', updateOnlineStatus);
 
 
 ////КУКИ
-document.addEventListener("DOMContentLoaded", () => {
-  const banner = document.getElementById("cookieBanner");
-  const acceptBtn = document.getElementById("acceptCookies");
+const banner = document.getElementById('cookieBanner');
+const acceptBtn = document.getElementById('acceptCookies');
 
-  if (!localStorage.getItem("cookiesAccepted")) {
-    banner.style.display = "flex";
-    document.body.style.overflow = "hidden"; // блокируем скролл
+// Показываем баннер при загрузке
+window.addEventListener('load', () => {
+  if (!localStorage.getItem('cookiesAccepted')) {
+    banner.style.display = 'flex';
   }
-
-  acceptBtn.addEventListener("click", () => {
-    localStorage.setItem("cookiesAccepted", "true");
-    banner.style.display = "none";
-    document.body.style.overflow = ""; // возвращаем скролл
-  });
 });
+
+acceptBtn.addEventListener('click', () => {
+  localStorage.setItem('cookiesAccepted', 'true');
+  banner.style.display = 'none';
+});
+
