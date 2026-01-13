@@ -59,41 +59,19 @@ body
         display: flex
         flex-direction: row
         justify-content: space-between
-.whatsapp-btn
-    display: inline-flex
-    align-items: center
-    justify-content: center
-    margin-top: -30px
-    padding: 18px 44px     // 👉 сделала больше
-    border-radius: 9999px
-    border: none
 
-    background-color: $text-color-light
-    color: #fff            // белый текст, хорошо читается
-    font-family: $main-font
-    font-size: 20px
-    font-weight: 700
-    line-height: 1
-    text-decoration: none
-    cursor: pointer
-    box-shadow: 0 6px 16px rgba(0,0,0,.08)
-
-    &:hover
-      transform: translateY(-2px)
-      box-shadow: 0 10px 24px rgba(0,0,0,.12)
 .nav-menu
     &__list
         display: flex
-        flex-direction: row 
+        gap: 24px
     &__list-item
-        font-weight: 700
-        font-size: 24px 
-        padding-top: 25px
+        justify-content: space-between
+        padding-top: 0px
+        padding-right: 0px
         &:last-child
             margin-right: 0px
     &__list-item a
         text-decoration: none
-        color: $main-color
 
 .content-container
     display: flex
@@ -1510,8 +1488,13 @@ $text-color-light: #5EA751
     &__list
       display: flex
       flex-direction: row
-      padding: 0
+      padding-right: 0px
       margin: 0
+      gap: 10px
+      a
+        svg
+          width: 32px
+          height: 32px
     &__list-item
       padding-top: 0
       font-size: 12px
@@ -1522,22 +1505,7 @@ $text-color-light: #5EA751
       color: $text-color-light
       text-decoration: none
       font-weight: 700
-  .whatsapp-btn
-    display: inline-flex
-    align-items: center
-    justify-content: center
-    background-color: $text-color-light
-    color: $main-color !important
-    font-size: 12px
-    font-weight: 200
-    line-height: 1.2
-    border: none
-    border-radius: 9999px
-    padding: 6px 12px
-    text-decoration: none
-    &:hover
-      background-color:#25D366
-      transform: translateY(-1px)
+  
 
   /* ===== HERO: ЗАГОЛОВОК + ФОТО + ЗЕЛЁНАЯ ПИЛЮЛЯ ===== */
 
